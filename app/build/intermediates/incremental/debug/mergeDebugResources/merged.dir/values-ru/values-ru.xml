@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d новое уведомление</item>
+    <item quantity="few">%d новых уведомления</item>
+    <item quantity="many">%d новых уведомлений</item>
+    <item quantity="other">%d нового уведомления</item>
+  </plurals>
+    <string name="_new">новый</string>
+    <string name="a_network_error_occurred">Произошла сетевая ошибка</string>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Перейти на главный экран"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Перейти вверх"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Ещё"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Показать все"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Выберите приложение"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ВЫКЛ"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ВКЛ"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Ввод"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Fn +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Пробел"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Меню +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Введите запрос"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Удалить запрос"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Поисковый запрос"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Поиск"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Отправить запрос"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Голосовой поиск"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Поделиться с помощью"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Поделиться с помощью <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Свернуть"</string>
+    <string name="about">О программе</string>
+    <string name="active_windows">Активные окна</string>
+    <string name="add">Добавить</string>
+    <string name="add_to_favorites">Добавить в избранное</string>
+    <string name="advanced">Продвинутые</string>
+    <string name="app_name">Winlator</string>
+    <string name="audio">Аудио</string>
+    <string name="audio_driver">Аудио драйвер</string>
+    <string name="auto">Авто</string>
+    <string name="average_latency">Средняя задержка</string>
+    <string name="background">Фон</string>
+    <string name="battery">Аккумулятор</string>
+    <string name="binding">Привязка</string>
+    <string name="binding_down">Привязка Вниз</string>
+    <string name="binding_left">Привязка Влево</string>
+    <string name="binding_right">Привязка Вправо</string>
+    <string name="binding_up">Привязка Вверх</string>
+    <string name="bindings">привязки</string>
+    <string name="both">Оба</string>
+    <string name="bottomsheet_action_expand_halfway">Развернуть наполовину</string>
+    <string name="box64_logs">Логи Box64</string>
+    <string name="box64_preset">Предустановка Box64</string>
+    <string name="box64_version">Версия Box64</string>
+    <string name="brightness">Яркость</string>
+    <string name="bring_to_front">Вынести на передний план</string>
+    <string name="browse">Просмотреть</string>
+    <string name="builtin_wine">Встроенная (Wine)</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Ответить"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Видео"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Отклонить"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Завершить"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Входящий вызов"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Текущий вызов"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Фильтрация входящего вызова"</string>
+    <string name="cancel">Отмена</string>
+    <string name="capacity">Емкость</string>
+    <string name="capture_pointer_on_external_mouse">Захват указателя на внешней мыши</string>
+    <string name="channel">Канал</string>
+    <string name="character_counter_content_description">Введено символов: %1$d из %2$d</string>
+    <string name="character_counter_overflowed_content_description">Превышено ограничение на количество символов (%1$d из %2$d)</string>
+    <string name="clear_cache">Очистить кэш</string>
+    <string name="clear_text_end_icon_content_description">Очистить текстовое поле</string>
+    <string msgid="406453423630273620" name="close_drawer">"Закрыть меню навигации"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"Закрыть лист"</string>
+    <string name="color">Цвет</string>
+    <string name="color_adjustment">Регулировка цвета</string>
+    <string name="columns">Столбцы</string>
+    <string name="configuration">Конфигурация</string>
+    <string name="conservative">Консервативный</string>
+    <string name="container">Контейнер</string>
+    <string name="containers">Контейнеры</string>
+    <string name="contains">Содержит</string>
+    <string name="contrast">Контраст</string>
+    <string name="controls_editor">Редактор управления</string>
+    <string name="controls_profile">Контрольный профиль</string>
+    <string name="copy">Копировать</string>
+    <string name="copying_files">Копирование файлов...</string>
+    <string name="creating_container">Создание контейнера...</string>
+    <string name="credits_and_third_party_apps">Авторы и сторонние приложения</string>
+    <string name="current">ток</string>
+    <string name="cursor_size">Размер курсора</string>
+    <string name="cursor_speed">Скорость курсора</string>
+    <string name="custom">Пользовательский</string>
+    <string name="custom_device">Пользовательское устройство</string>
+    <string name="custom_text">Пользовательский текст</string>
+    <string name="cut">Вырезать</string>
+    <string name="d3d_feature_level">Уровень функций D3D</string>
+    <string name="dark">Темный</string>
+    <string msgid="8038256446254964252" name="default_error_message">"Неправильный ввод"</string>
+    <string name="default_no_override">Стандартный (без замены)</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"Всплывающее окно"</string>
+    <string name="desktop">Рабочий стол</string>
+    <string name="directinput_mapper_type">Тип маппера DirectInput</string>
+    <string name="disable">Выключить</string>
+    <string name="disable_mouse_input">Отключить ввод с помощью мыши</string>
+    <string name="disable_vertex_array_bgra">Запрещать vertex array BGRA</string>
+    <string name="disabled">Выключено</string>
+    <string name="do_you_want_to_download_the_selected_profiles">Хотите загрузить выбранные профили?</string>
+    <string name="do_you_want_to_duplicate_this_container">Вы хотите дублировать контейнер?</string>
+    <string name="do_you_want_to_duplicate_this_preset">Вы хотите дублировать предустановку?</string>
+    <string name="do_you_want_to_duplicate_this_profile">Вы хотите дублировать профиль?</string>
+    <string name="do_you_want_to_end_this_process">Вы хотите завершить процесс?</string>
+    <string name="do_you_want_to_reinstall_system_files">Хотите переустановить системные файлы?</string>
+    <string name="do_you_want_to_remove_this_component_version">Вы хотите удалить эту версию компонента?</string>
+    <string name="do_you_want_to_remove_this_container">Вы хотите удалить контейнер?</string>
+    <string name="do_you_want_to_remove_this_controller">Вы хотите удалить контроллер?</string>
+    <string name="do_you_want_to_remove_this_file">Вы хотите удалить этот файл?</string>
+    <string name="do_you_want_to_remove_this_preset">Вы хотите удалить предустановку?</string>
+    <string name="do_you_want_to_remove_this_profile">Вы хотите удалить профиль?</string>
+    <string name="do_you_want_to_remove_this_wine_version">Вы хотите удалить эту версию Wine?</string>
+    <string name="do_you_want_to_reset_configurations">Вы хотите сбросить настройки?</string>
+    <string name="documents">Документы</string>
+    <string name="download_file">Загрузить файл</string>
+    <string name="downloading_file">Загрузка файла...</string>
+    <string name="downloads">Загрузки</string>
+    <string name="dpi_font_size">DPI (Размер шрифта)</string>
+    <string name="drive">Unidade</string>
+    <string name="drive_c">Диск C:</string>
+    <string name="drives">Диски</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"Раскрывающееся меню"</string>
+    <string name="duplicate">Дублировать</string>
+    <string name="duplicating_container">Дублирование контейнера...</string>
+    <string name="dxwrapper_help_content"><![CDATA[
+        <i><b>WineD3D</b></i> представляет собой слой трансляции DirectX 1-11 в OpenGL.<br /><br />
+        <i><b>DXVK</b></i> представляет собой слой трансляции Direct3D 9-11 в Vulkan.<br /><br />
+        <i><b>VKD3D</b></i> представляет собой слой трансляции Direct3D 12 API в Vulkan.<br /><br />
+        <i><b>CNC DDraw</b></i> представляет собой реализацию DirectDraw для лучшей совместимости с классическими играми.
+    ]]></string>
+    <string name="edit">Редактировать</string>
+    <string name="edit_container">Редактировать контейнер</string>
+    <string name="enable">Включить</string>
+    <string name="enable_background_protection">Включить защиту в фоновом режиме</string>
+    <string name="enable_background_protection_tooltip">Держать контейнер активным в фоне или при блокировке, но процессы приостановлены.</string>
+    <string name="enable_background_wakelock">Включить wakelock, когда устройство заблокировано</string>
+    <string name="enable_background_wakelock_tooltip">Избежать проблем при возврате после разблокировки устройства.</string>
+    <string name="enable_crt_shader">Включить CRT Shader</string>
+    <string name="enable_csmt">Включить CSMT (Command Stream Multi-Thread)</string>
+    <string name="enable_direct_rendering">Включить прямой рендеринг</string>
+    <string name="enable_fxaa">Включить FXAA</string>
+    <string name="enable_strict_shader_math">Включить Strict Shader Math</string>
+    <string name="enable_vibration">Включить вибрацию</string>
+    <string name="enable_wine_debug">Включить отладку Wine</string>
+    <string name="enabled">Включено</string>
+    <string name="end_process">Завершить процесс</string>
+    <string name="environment_variables">Переменные среды</string>
+    <string name="error_icon_content_description">Ошибка</string>
+    <string name="estimated_used_space">Расчетное используемое место</string>
+    <string name="exit">Выход</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Дополнительно"</string>
+    <string name="export">Экспорт</string>
+    <string name="export_profile">Экспорт профиля</string>
+    <string name="exposed_dropdown_menu_content_description">Показать раскрывающееся меню</string>
+    <string name="exposed_extensions">Открытые расширения</string>
+    <string name="external_controller">Внешний контроллер</string>
+    <string name="external_controllers">Внешние контроллеры</string>
+    <string name="favorites">Избранное</string>
+    <string name="fgs_notification_channel_desc">Поддерживает работу Winlator в фоновом режиме, чтобы приостановленная сессия Wine не прерывалась управлением фоновыми процессами Android.</string>
+    <string name="fgs_notification_content_container_background">Сессия контейнера приостановлена в фоновом режиме</string>
+    <string name="fgs_notification_content_container_foreground">Запущен контейнерный сеанс</string>
+    <string name="fgs_notification_content_else">Winlator работает в фоновом режиме</string>
+    <string name="file">Файл</string>
+    <string name="file_added_to_favorites">Файл добавлен в Избранное</string>
+    <string name="file_manager">Файловый менеджер</string>
+    <string name="finishing_installation">Завершение установки...</string>
+    <string name="folder">Папка</string>
+    <string name="force">Принудительно</string>
+    <string name="force_fullscreen">Полноэкранный режим</string>
+    <string name="frame_rate">Частота кадров</string>
+    <string name="full">Полный</string>
+    <string name="game_controllers">Игровые контроллеры</string>
+    <string name="gamepad">Геймпад</string>
+    <string name="gamepad_model">Модель геймпада</string>
+    <string name="gamma">Гамма</string>
+    <string name="general">Общие</string>
+    <string name="gpu_name">Имя GPU</string>
+    <string name="graphics_driver">Графический драйвер</string>
+    <string name="height">Высота</string>
+    <string name="home">Начинать</string>
+    <string name="horizontal">Горизонтальная</string>
+    <string name="hud_mode">Режим HUD</string>
+    <string name="icon">Иконка</string>
+    <string name="icon_content_description">Значок диалогового окна</string>
+    <string name="image">Изображение</string>
+    <string name="image_cache_size">Размер кэша изображения</string>
+    <string name="import_profile">Импорт профиля</string>
+    <string msgid="6827826412747255547" name="in_progress">"Выполняется"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"Отмечено частично"</string>
+    <string name="information">Информация</string>
+    <string name="input_controls">Управление вводом</string>
+    <string name="install_component">Установить компонент</string>
+    <string name="install_wine">Установка Wine</string>
+    <string name="installed_version">Установленная версия</string>
+    <string name="installing_system_files">Установка системных файлов...</string>
+    <string name="instrument">Инструмент</string>
+    <string name="intermediate">Средний</string>
+    <string name="internal_storage">Внутреннее хранилище</string>
+    <string name="item_view_role_description">Вкладка</string>
+    <string name="items">Предметы</string>
+    <string name="keyboard">Клавиатура</string>
+    <string name="language">Язык</string>
+    <string name="letter">Буква</string>
+    <string name="light">Свет</string>
+    <string name="loading">Загрузка...</string>
+    <string name="location">Расположение</string>
+    <string name="locations">Места</string>
+    <string name="logs">Логи</string>
+    <string name="logs_exported_to">Логи экспортированы в</string>
+    <string name="low_latency">Низкая задержка</string>
+    <string msgid="2988463736136100848" name="m3c_bottom_sheet_collapse_description">"Свернуть нижний экран"</string>
+    <string msgid="1555567894577437024" name="m3c_bottom_sheet_dismiss_description">"Закрыть нижний экран"</string>
+    <string msgid="8403354765404029791" name="m3c_bottom_sheet_drag_handle_description">"Маркер перемещения"</string>
+    <string msgid="6670819569745899763" name="m3c_bottom_sheet_expand_description">"Развернуть нижний экран"</string>
+    <string msgid="3010635850035863127" name="m3c_bottom_sheet_pane_title">"Нижний экран"</string>
+    <string msgid="8166741421776570875" name="m3c_date_input_headline">"Введенная дата"</string>
+    <string msgid="229313757840775812" name="m3c_date_input_headline_description">"Введенная дата: %1$s"</string>
+    <string msgid="6116910750161463197" name="m3c_date_input_invalid_for_pattern">"Дата не соответствует допустимому шаблону: %1$s"</string>
+    <string msgid="2521768508935305279" name="m3c_date_input_invalid_not_allowed">"Недопустимая дата: %1$s"</string>
+    <string msgid="7052898923934555305" name="m3c_date_input_invalid_year_range">"Дата не входит в допустимый диапазон: %1$s–%2$s"</string>
+    <string msgid="2895559812010326913" name="m3c_date_input_label">"Дата"</string>
+    <string msgid="1237013946323089826" name="m3c_date_input_no_input_description">"Нет"</string>
+    <string msgid="7306227249789210568" name="m3c_date_input_title">"Выберите дату"</string>
+    <string msgid="7605002211875882969" name="m3c_date_picker_headline">"Выбранная дата"</string>
+    <string msgid="3664277305226978227" name="m3c_date_picker_headline_description">"Текущий выбор: %1$s"</string>
+    <string msgid="8436650776581492840" name="m3c_date_picker_navigate_to_year_description">"Переход к %1$s году"</string>
+    <string msgid="5811000998184572395" name="m3c_date_picker_no_selection_description">"Нет"</string>
+    <string msgid="7813882352367152251" name="m3c_date_picker_scroll_to_earlier_years">"Прокрутите до более ранних лет"</string>
+    <string msgid="5727367015496556177" name="m3c_date_picker_scroll_to_later_years">"Прокрутите до более поздних лет"</string>
+    <string msgid="1804346892470238807" name="m3c_date_picker_switch_to_calendar_mode">"Перейти в режим выбора даты"</string>
+    <string msgid="395627960681594326" name="m3c_date_picker_switch_to_day_selection">"Проведите по экрану, чтобы выбрать год, или нажмите, чтобы вернуться к выбору дня."</string>
+    <string msgid="2219746470065162704" name="m3c_date_picker_switch_to_input_mode">"Перейти в режим ввода текста"</string>
+    <string msgid="7142101321095356500" name="m3c_date_picker_switch_to_next_month">"Перейти к следующему месяцу"</string>
+    <string msgid="228438865139394590" name="m3c_date_picker_switch_to_previous_month">"Перейти к предыдущему месяцу"</string>
+    <string msgid="791651718641787594" name="m3c_date_picker_switch_to_year_selection">"Перейти к выбору года"</string>
+    <string msgid="7430790972741451689" name="m3c_date_picker_title">"Выберите дату"</string>
+    <string msgid="3199387177749801575" name="m3c_date_picker_today_description">"Сегодня"</string>
+    <string msgid="2068382232816991922" name="m3c_date_picker_year_picker_pane_title">"Отображаемый выбор года"</string>
+    <string msgid="3190049423327661366" name="m3c_date_range_input_invalid_range_input">"Указан недопустимый диапазон дат."</string>
+    <string msgid="3148384720560189467" name="m3c_date_range_input_title">"Введите даты"</string>
+    <string msgid="2138321128465719402" name="m3c_date_range_picker_day_in_range">"День в диапазоне дат"</string>
+    <string msgid="4947636797751277713" name="m3c_date_range_picker_end_headline">"Конечная дата"</string>
+    <string msgid="602077859540990149" name="m3c_date_range_picker_scroll_to_next_month">"Прокрутите до следующего месяца"</string>
+    <string msgid="4592174524846109496" name="m3c_date_range_picker_scroll_to_previous_month">"Прокрутите до предыдущего месяца"</string>
+    <string msgid="4665981448952749820" name="m3c_date_range_picker_start_headline">"Начальная дата"</string>
+    <string msgid="3134165431120340385" name="m3c_date_range_picker_title">"Выберите даты"</string>
+    <string msgid="7617233117134790350" name="m3c_dialog">"Диалоговое окно"</string>
+    <string msgid="3177828188723359358" name="m3c_dropdown_menu_collapsed">"Свернуто"</string>
+    <string msgid="2360841780724299882" name="m3c_dropdown_menu_expanded">"Развернуто"</string>
+    <string msgid="8687821690726149911" name="m3c_dropdown_menu_toggle">"Показать или скрыть раскрывающееся меню"</string>
+    <string msgid="6152806324422087846" name="m3c_search_bar_search">"Строка поиска"</string>
+    <string msgid="6152755701819882931" name="m3c_snackbar_dismiss">"Закрыть"</string>
+    <string msgid="7655536806087401899" name="m3c_suggestions_available">"Подсказки показаны ниже"</string>
+    <string msgid="2786685010796619560" name="m3c_time_picker_am">"AM"</string>
+    <string msgid="2349193472625211372" name="m3c_time_picker_hour">"Часы"</string>
+    <string msgid="9179527532316922345" name="m3c_time_picker_hour_24h_suffix">"%1$d ч."</string>
+    <string msgid="8876759303332837035" name="m3c_time_picker_hour_selection">"Выбрать час"</string>
+    <string msgid="3458167507790628988" name="m3c_time_picker_hour_suffix">"%1$d ч."</string>
+    <string msgid="6973808109666874069" name="m3c_time_picker_hour_text_field">"часы"</string>
+    <string msgid="4313071914266462005" name="m3c_time_picker_minute">"Минуты"</string>
+    <string msgid="4699133535056739733" name="m3c_time_picker_minute_selection">"Выберите минуты"</string>
+    <string msgid="5064177921781937179" name="m3c_time_picker_minute_suffix">"%1$d мин."</string>
+    <string msgid="7661234488295443182" name="m3c_time_picker_minute_text_field">"минуты"</string>
+    <string msgid="5865171949528594571" name="m3c_time_picker_period_toggle_description">"Выбрать AM (до полудня) или PM (после полудня)"</string>
+    <string msgid="6616362054113087709" name="m3c_time_picker_pm">"PM"</string>
+    <string msgid="1805687647081129904" name="m3c_tooltip_long_press_label">"Показать подсказку"</string>
+    <string msgid="5460405025248574620" name="m3c_tooltip_pane_description">"Подсказка"</string>
+    <string name="magnifier">Лупа</string>
+    <string name="material_clock_toggle_content_description">Выберите AM (до полудня) или PM (после полудня)</string>
+    <string name="material_hour_selection">Выберите час</string>
+    <string name="material_hour_suffix">%1$s ч.</string>
+    <string name="material_minute_selection">Выберите минуты</string>
+    <string name="material_minute_suffix">%1$s мин.</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Чтобы ввести время, перейдите в режим часов.</string>
+    <string name="material_timepicker_hour">Час</string>
+    <string name="material_timepicker_minute">Минуты</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Выбор времени</string>
+    <string name="material_timepicker_text_input_mode_description">Чтобы ввести время, перейдите в режим ввода текста.</string>
+    <string name="max_device_memory">Максимальный объем памяти</string>
+    <string name="memory">Память</string>
+    <string name="midi_input_device">MIDI-устройство ввода</string>
+    <string name="midi_soundfont">MIDI SoundFont</string>
+    <string name="minimal">Минимальный</string>
+    <string name="mode">Режим</string>
+    <string name="modified">Измененный</string>
+    <string name="mouse">мыши</string>
+    <string name="move_cursor_to_touchpoint">Переместите курсор в точку касания</string>
+    <string name="move_mouse_when_pressed">Перемещать мышь при нажатии</string>
+    <string name="mtrl_badge_numberless_content_description">Новое уведомление</string>
+    <string name="mtrl_chip_close_icon_content_description">Удалить \"%1$s\"</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">Новых уведомлений больше %1$d</string>
+    <string name="mtrl_picker_a11y_next_month">Перейти к следующему месяцу</string>
+    <string name="mtrl_picker_a11y_prev_month">Перейти к предыдущему месяцу</string>
+    <string name="mtrl_picker_announce_current_selection">Выбранный элемент: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Выберите дату</string>
+    <string name="mtrl_picker_date_header_unselected">Выбранная дата</string>
+    <string name="mtrl_picker_day_of_week_column_header">Столбец со днями недели: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Недействительный формат.</string>
+    <string name="mtrl_picker_invalid_format_example">Пример: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Используйте: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Недопустимый диапазон.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Перейти к %1$s году</string>
+    <string name="mtrl_picker_out_of_range">Вне диапазона: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Дата начала – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – дата окончания</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Выберите диапазон дат</string>
+    <string name="mtrl_picker_range_header_unselected">Дата начала – дата окончания</string>
+    <string name="mtrl_picker_save">Сохранить</string>
+    <string name="mtrl_picker_text_input_date_hint">Дата</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Дата окончания</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Дата начала</string>
+    <string name="mtrl_picker_text_input_day_abbr">д</string>
+    <string name="mtrl_picker_text_input_month_abbr">м</string>
+    <string name="mtrl_picker_text_input_year_abbr">г</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Перейти в режим выбора дней</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Нажмите, чтобы перейти к выбору дня</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Перейти в режим ввода текста</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Нажмите, чтобы перейти к выбору года</string>
+    <string name="multiselection_combobox_display_text">%d из %d товаров</string>
+    <string name="name">Имя</string>
+    <string name="native_windows">Сторонняя (Windows)</string>
+    <string msgid="542007171693138492" name="navigation_menu">"Меню навигации"</string>
+    <string name="new_container">Новый контейнер</string>
+    <string name="new_environment_variable">Новая переменная среды</string>
+    <string name="new_folder">Новая папка</string>
+    <string name="new_task">Новая задача</string>
+    <string name="no_control_element_selected">Элемент управления не выбран</string>
+    <string name="no_items_to_display">Нет элементов для отображения</string>
+    <string name="no_profile_found">Профиль не найден</string>
+    <string name="no_profile_selected">Профиль не выбран</string>
+    <string name="none">Ничего</string>
+    <string msgid="6610465462668679431" name="not_selected">"Не выбрано"</string>
+    <string msgid="6573031135582639649" name="not_set">"Не указано"</string>
+    <string name="note">нота</string>
+    <string name="offscreen_rendering_mode">Режим внеэкранного рендеринга</string>
+    <string name="ok">OK</string>
+    <string name="old">старый</string>
+    <string name="opacity">Прозрачность</string>
+    <string name="open_android_browser_from_wine">Откройте браузер Android из Wine</string>
+    <string name="open_directory">Открытый каталог</string>
+    <string name="open_file">Открыть файл</string>
+    <string name="opengl_version">Версия OpenGL</string>
+    <string name="options">Опции</string>
+    <string name="orientation">Ориентация</string>
+    <string name="overlay_opacity">Прозрачность оверлея</string>
+    <string name="password_toggle_content_description">Показать пароль</string>
+    <string name="performance">производительность</string>
+    <string name="performance_mode">Режим производительности</string>
+    <string name="pip_mode">Режим PiP</string>
+    <string name="player">Игрок:</string>
+    <string name="power_saving">Энергосбережение</string>
+    <string msgid="6685851473431805375" name="preference_copied">"Текст \"<ns1:g id="SUMMARY">%1$s</ns1:g>\" скопирован в буфер обмена"</string>
+    <string name="preparing_installation">Подготовка к установке...</string>
+    <string name="present_mode">Режим презентации</string>
+    <string name="preset">Предустановка</string>
+    <string name="press_any_button_on_your_controller">Нажмите любую кнопку на вашем контроллере</string>
+    <string name="process_name">Имя процесса</string>
+    <string name="processes">Процессы</string>
+    <string name="processor_affinity">Соответствие процессоров</string>
+    <string name="processor_affinity_32_bit_apps">Соответствие процессоров (32-bit)</string>
+    <string name="profile">Профиль</string>
+    <string name="profile_exported_to">Профиль экспортирован в</string>
+    <string name="profile_name">Имя профиля</string>
+    <string name="range">Диапазон</string>
+    <string msgid="5941395253238309765" name="range_end">"Конец диапазона"</string>
+    <string msgid="7097486360902471446" name="range_start">"Начало диапазона"</string>
+    <string name="reinstall_system_files">Переустановить системные файлы</string>
+    <string name="relative_mouse_movement">Относительное движение мыши</string>
+    <string name="remove">Удалить</string>
+    <string name="removing_container">Удаление контейнера...</string>
+    <string name="removing_files">Удаление файлов...</string>
+    <string name="removing_wine">Удаление Wine...</string>
+    <string name="rename">Переименовать</string>
+    <string name="renderer">Рендерер</string>
+    <string name="reset">Перезагрузить</string>
+    <string name="resource_memory_type">Тип памяти ресурса</string>
+    <string name="run">Запустить</string>
+    <string name="save_logs_to_file">Сохранить журналы в файл</string>
+    <string name="save_mem_on_run_from_steam">Экономия памяти при запуске из Steam</string>
+    <string name="scale">Масштаб</string>
+    <string name="screen_effect">Эффект экрана</string>
+    <string name="screen_size">Размер экрана</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Поиск"</string>
+    <string name="select_profile">Выбрать профиль</string>
+    <string msgid="6043586758067023" name="selected">"Выбрано"</string>
+    <string name="settings">Настройки</string>
+    <string name="shape">Форма</string>
+    <string name="shortcuts">Ярлыки</string>
+    <string name="show_desktop">Показать рабочий стол</string>
+    <string name="show_touchscreen_controls">Показать элементы управления сенсорным экраном</string>
+    <string name="simple_fps">Простой (FPS)</string>
+    <string name="size">Размер</string>
+    <string name="solid_color">Сплошной цвет</string>
+    <string name="sound">Звук</string>
+    <string name="stability">Стабильность</string>
+    <string name="starting_up">Запуск...</string>
+    <string name="startup_selection">Тип запуска</string>
+    <string name="startup_selection_aggressive">Агрессивный (Загрузите минимальное количество сервисов)</string>
+    <string name="startup_selection_essential">Основной (Загрузить только основные службы)</string>
+    <string name="startup_selection_normal">Нормальный (Загрузить все службы)</string>
+    <string msgid="4139871816613051306" name="state_empty">"Пусто"</string>
+    <string msgid="5834637030682409883" name="state_off">"Отключено"</string>
+    <string msgid="1490883874751719580" name="state_on">"Включено"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">">999"</string>
+    <string name="storage_info">Информация о хранилище</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string msgid="2561197295334830845" name="switch_role">"Переключатель"</string>
+    <string name="system">Система</string>
+    <string name="system_font">Системный шрифт</string>
+    <string msgid="1672349317127674378" name="tab">"Вкладка"</string>
+    <string name="target_path">Путь к диску</string>
+    <string name="task_manager">Диспетчер задач</string>
+    <string msgid="5946805113151406391" name="template_percent">"Процентов: <ns1:g id="PERCENTAGE">%1$d</ns1:g>."</string>
+    <string name="the_settings_have_been_changed_do_you_want_to_restart_the_app">Настройки были изменены. Хотите перезапустить приложение?</string>
+    <string name="theme">Тема</string>
+    <string name="there_already_file_with_that_name">Файл с таким именем уже существует</string>
+    <string name="there_are_no_items_to_download">Нет элементов для загрузки.</string>
+    <string name="toggle_fullscreen">Полный экран</string>
+    <string name="toggle_switch">Режим переключателя</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"Подсказка"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"Показать подсказку"</string>
+    <string name="total">Всего</string>
+    <string name="touchpad_help">Подсказки для тачпада</string>
+    <string name="touchpad_help_main_menu_description">Нажмите четырьмя пальцами</string>
+    <string name="touchpad_help_main_menu_title">Главное меню</string>
+    <string name="touchpad_help_mouse_left_click_description">Коротко нажмите одним пальцем</string>
+    <string name="touchpad_help_mouse_left_click_title">Щелчок левой кнопкой мыши</string>
+    <string name="touchpad_help_mouse_right_click_description">Нажмите одним пальцем и коротко нажмите другим пальцем.</string>
+    <string name="touchpad_help_mouse_right_click_title">Щелчок правой кнопкой мыши</string>
+    <string name="touchpad_help_mouse_scroll_wheel_description">Нажмите двумя пальцами и двигайте</string>
+    <string name="touchpad_help_mouse_scroll_wheel_title">Колесо прокрутки мыши</string>
+    <string name="trace">Трассировку</string>
+    <string name="type">Тип</string>
+    <string name="unable_to_download_file">Невозможно загрузить файл</string>
+    <string name="unable_to_import_profile">Невозможно импортировать профиль</string>
+    <string name="unable_to_install_system_files">Невозможно установить системные файлы</string>
+    <string name="unable_to_install_wine">Невозможно установить Wine</string>
+    <string name="unable_to_remove_this_wine_version">Невозможно удалить эту версию Wine</string>
+    <string name="untitled">Без названия</string>
+    <string name="updating_system_files">Обновление системных файлов...</string>
+    <string name="use_android_clipboard_on_Wine">Использование буфера обмена Android в Wine</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"ВЫКЛ."</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"ВКЛ."</string>
+    <string name="value">Значение</string>
+    <string name="version">Версия</string>
+    <string name="vertical">Вертикальная</string>
+    <string name="video_memory_size">Объем видеопамяти</string>
+    <string name="view_style">Посмотреть стиль</string>
+    <string name="voltage">Напряжение</string>
+    <string name="volume">Громкость</string>
+    <string name="vulkan_version">Версия Вулкана</string>
+    <string name="width">Ширина</string>
+    <string name="windows_version">Версия для Windows</string>
+    <string name="wine_configuration">Конфигурация Wine</string>
+    <string name="wine_debug_channel">Канал отладки Wine</string>
+    <string name="wine_version">Версия Wine</string>
+    <string name="you_cannot_paste_files_here">Сюда нельзя вставлять файлы</string>
+    <string name="you_cannot_remove_this_component_version">Вы не можете удалить эту версию компонента</string>
+    <string name="you_cannot_remove_this_preset">Вы не можете удалить эту предустановку</string>
+    <string name="zero_no_limit">0 (Нет ограничений)</string>
+</resources>

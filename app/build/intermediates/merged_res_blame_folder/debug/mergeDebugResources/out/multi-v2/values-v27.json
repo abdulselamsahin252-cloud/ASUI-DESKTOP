@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.windowsui.app-mergeDebugResources-2:/values-v27/values-v27.xml",
+            "map": [
+                {
+                    "source": "/WindowsUI/winlator/build/intermediates/packaged_res/debug/packageDebugResources/values-v27/values-v27.xml",
+                    "from": {
+                        "startLines": "2,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,410",
+                        "endLines": "7,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "405,762"
+                    }
+                }
+            ]
+        }
+    ]
+}

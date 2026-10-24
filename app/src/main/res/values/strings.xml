@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ==============================================================
+         UYGULAMA BİLGİLERİ
+         ============================================================== -->
+    <string name="app_name">ASUI Desktop</string>
+    <string name="app_version">1.0.0</string>
+    <string name="app_description">Windows 11 tarzı Android masaüstü deneyimi</string>
+
+    <!-- ==============================================================
+         DOSYA SAĞLAYICI (FileProvider)
+         ============================================================== -->
+    <string name="file_provider_authority">${applicationId}.fileprovider</string>
+
+    <!-- ==============================================================
+         GENEL UI ETİKETLERİ
+         ============================================================== -->
+    <string name="ok">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="close">Kapat</string>
+    <string name="save">Kaydet</string>
+    <string name="delete">Sil</string>
+    <string name="apply">Uygula</string>
+    <string name="reset">Sıfırla</string>
+    <string name="default_value">Varsayılan</string>
+    <string name="back">Geri</string>
+    <string name="next">İleri</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="loading">Yükleniyor...</string>
+    <string name="error">Hata</string>
+    <string name="warning">Uyarı</string>
+    <string name="info">Bilgi</string>
+    <string name="success">Başarılı</string>
+
+    <!-- ==============================================================
+         ANA EKRAN (DesktopScreen)
+         ============================================================== -->
+    <string name="desktop_title">Masaüstü</string>
+    <string name="desktop_empty">Masaüstünde hiçbir öğe yok</string>
+    <string name="desktop_search_hint">Masaüstünde ara...</string>
+    <string name="desktop_context_refresh">Yenile</string>
+    <string name="desktop_context_new_folder">Yeni Klasör</string>
+    <string name="desktop_context_paste">Yapıştır</string>
+    <string name="desktop_context_terminal">Terminali Aç</string>
+    <string name="desktop_context_task_manager">Görev Yöneticisi</string>
+    <string name="desktop_context_personalization">Kişiselleştir</string>
+    <string name="desktop_context_store">ASUI Store</string>
+    <string name="desktop_context_show_hidden">Gizli öğeleri göster</string>
+    <string name="desktop_context_sort_by_name">Sırala (Ada Göre)</string>
+    <string name="desktop_context_sort_by_type">Sırala (Türe Göre)</string>
+    <string name="desktop_context_sort_by_date">Sırala (Tarihe Göre)</string>
+
+    <!-- ==============================================================
+         GÖREV ÇUBUĞU (Taskbar)
+         ============================================================== -->
+    <string name="taskbar_start">Başlat</string>
+    <string name="taskbar_search">Ara</string>
+    <string name="taskbar_notifications">Bildirimler</string>
+    <string name="taskbar_quick_settings">Hızlı Ayarlar</string>
+    <string name="taskbar_hidden_icons">Gizli Simgeler</string>
+    <string name="taskbar_clock">Saat</string>
+    <string name="taskbar_date">Tarih</string>
+    <string name="taskbar_user">Kullanıcı</string>
+    <string name="taskbar_power">Güç</string>
+    <string name="taskbar_lock">Kilit</string>
+    <string name="taskbar_restart">Yeniden Başlat</string>
+    <string name="taskbar_shutdown">Kapat</string>
+
+    <!-- ==============================================================
+         BAŞLAT MENÜSÜ (StartMenu)
+         ============================================================== -->
+    <string name="start_menu_title">Başlat</string>
+    <string name="start_menu_search_hint">Uygulama ara...</string>
+    <string name="start_menu_pinned">Sabitlenmiş</string>
+    <string name="start_menu_recent">Son Kullanılanlar</string>
+    <string name="start_menu_all_apps">Tüm Uygulamalar</string>
+    <string name="start_menu_personalize">Kişiselleştir</string>
+    <string name="start_menu_settings">Ayarlar</string>
+    <string name="start_menu_lock">Kilit</string>
+    <string name="start_menu_restart">Yeniden Başlat</string>
+    <string name="start_menu_shutdown">Kapat</string>
+    <string name="start_menu_user">Kullanıcı</string>
+    <string name="start_menu_pin_to_taskbar">Görev Çubuğuna Sabitle</string>
+    <string name="start_menu_unpin_from_taskbar">Görev Çubuğundan Kaldır</string>
+    <string name="start_menu_add_to_desktop">Masaüstüne Ekle</string>
+    <string name="start_menu_remove_from_desktop">Masaüstünden Kaldır</string>
+    <string name="start_menu_app_info">Uygulama Bilgisi</string>
+    <string name="start_menu_app_not_found">Uygulama bulunamadı</string>
+
+    <!-- ==============================================================
+         BİLDİRİMLER (NotificationPanel)
+         ============================================================== -->
+    <string name="notification_title">Bildirimler</string>
+    <string name="notification_empty">Bildirim yok</string>
+    <string name="notification_clear_all">Tümünü temizle</string>
+    <string name="notification_pin">Sabitle</string>
+    <string name="notification_unpin">Sabitlemeyi kaldır</string>
+    <string name="notification_reply">Yanıtla</string>
+    <string name="notification_delete">Kaldır</string>
+    <string name="notification_access_denied">Bildirim erişimi kapalı</string>
+    <string name="notification_access_grant">İzin ver</string>
+    <string name="notification_category_all">Tümü</string>
+    <string name="notification_category_sms">📩 SMS</string>
+    <string name="notification_category_social">💬 Sosyal</string>
+    <string name="notification_category_email">📧 E-posta</string>
+    <string name="notification_category_finance">🏦 Finans</string>
+    <string name="notification_category_system">⚙️ Sistem</string>
+    <string name="notification_category_promo">🎯 Promosyon</string>
+    <string name="notification_category_default">📢 Bildirim</string>
+    <string name="notification_search_hint">Bildirimlerde ara...</string>
+    <string name="notification_quiet_hours_active">🔇 Sessiz saatler aktif</string>
+    <string name="notification_quiet_hours_inactive">🔊 Sessiz saatler pasif</string>
+
+    <!-- Bildirim "Ruh" kategorileri (mizahi) -->
+    <string name="notification_spirit_happy">Mutlu 😊</string>
+    <string name="notification_spirit_sad">Üzgün 😢</string>
+    <string name="notification_spirit_angry">Kızgın 😠</string>
+    <string name="notification_spirit_surprised">Şaşkın 😲</string>
+    <string name="notification_spirit_neutral">Nötr 😐</string>
+
+    <!-- ==============================================================
+         HIZLI AYARLAR (QuickSettingsPanel)
+         ============================================================== -->
+    <string name="quick_settings_title">Hızlı Ayarlar</string>
+    <string name="quick_settings_wifi">Wi-Fi</string>
+    <string name="quick_settings_bluetooth">Bluetooth</string>
+    <string name="quick_settings_airplane">Uçak Modu</string>
+    <string name="quick_settings_rotation">Döndürme Kilidi</string>
+    <string name="quick_settings_power_saving">Güç Tasarrufu</string>
+    <string name="quick_settings_night_mode">Gece Modu</string>
+    <string name="quick_settings_focus_mode">Odak Modu</string>
+    <string name="quick_settings_screenshot">Ekran Görüntüsü</string>
+    <string name="quick_settings_screenrecord">Ekran Kaydı</string>
+    <string name="quick_settings_magic">Sihir</string>
+    <string name="quick_settings_clean">Temizle</string>
+    <string name="quick_settings_sound_profile">Ses Profili</string>
+    <string name="quick_settings_brightness">Parlaklık</string>
+    <string name="quick_settings_volume">Ses</string>
+    <string name="quick_settings_quick_note">Hızlı Not</string>
+    <string name="quick_settings_recent_apps">Son Uygulamalar</string>
+    <string name="quick_settings_battery_low">⚠️ Pil düşük!</string>
+    <string name="quick_settings_connected_devices">Bağlı cihazlar</string>
+    <string name="quick_settings_no_device">Bağlı değil</string>
+
+    <!-- Ses profilleri -->
+    <string name="sound_profile_normal">Normal</string>
+    <string name="sound_profile_silent">Sessiz</string>
+    <string name="sound_profile_vibrate">Titreşim</string>
+
+    <!-- Performans profilleri -->
+    <string name="performance_balanced">Denge</string>
+    <string name="performance_performance">Performans</string>
+    <string name="performance_power_saver">Tasarruf</string>
+
+    <!-- ==============================================================
+         DOSYA GEZGİNİ (FileExplorer)
+         ============================================================== -->
+    <string name="explorer_title">Dosya Gezgini</string>
+    <string name="explorer_new_tab">Yeni Sekme</string>
+    <string name="explorer_close_tab">Sekmeyi Kapat</string>
+    <string name="explorer_go_back">Geri</string>
+    <string name="explorer_go_forward">İleri</string>
+    <string name="explorer_go_up">Yukarı</string>
+    <string name="explorer_refresh">Yenile</string>
+    <string name="explorer_home">Ana Sayfa</string>
+    <string name="explorer_search_hint">Dosya ara...</string>
+    <string name="explorer_view_details">Ayrıntılar</string>
+    <string name="explorer_view_icons">Simgeler</string>
+    <string name="explorer_root_mode">Root</string>
+    <string name="explorer_quick_access">Hızlı Erişim</string>
+    <string name="explorer_this_pc">Bu Bilgisayar</string>
+    <string name="explorer_desktop">Masaüstü</string>
+    <string name="explorer_downloads">İndirilenler</string>
+    <string name="explorer_documents">Belgeler</string>
+    <string name="explorer_pictures">Resimler</string>
+    <string name="explorer_music">Müzik</string>
+    <string name="explorer_videos">Videolar</string>
+    <string name="explorer_local_disk_c">Yerel Disk (C:)</string>
+    <string name="explorer_phone_d">Telefon (D:)</string>
+    <string name="explorer_system_root">Sistem Kökü (/)</string>
+    <string name="explorer_usb_devices">USB Aygıtlar</string>
+    <string name="explorer_empty_folder">Bu klasör boş</string>
+    <string name="explorer_file_folder">Dosya Klasörü</string>
+    <string name="explorer_file_size">Boyut</string>
+    <string name="explorer_file_type">Tür</string>
+    <string name="explorer_file_modified">Değiştirme tarihi</string>
+    <string name="explorer_file_name">Ad</string>
+    <string name="explorer_permissions">İzinler</string>
+    <string name="explorer_new_folder">Yeni Klasör</string>
+    <string name="explorer_rename">Yeniden Adlandır</string>
+    <string name="explorer_copy">Kopyala</string>
+    <string name="explorer_cut">Kes</string>
+    <string name="explorer_paste">Yapıştır</string>
+    <string name="explorer_delete">Sil</string>
+    <string name="explorer_compress">Sıkıştır</string>
+    <string name="explorer_extract">Çıkar</string>
+    <string name="explorer_properties">Özellikler</string>
+    <string name="explorer_open_with">Birlikte Aç</string>
+    <string name="explorer_cannot_open">Dosya açılamadı</string>
+
+    <!-- ==============================================================
+         TERMİNAL (CmdTerminal)
+         ============================================================== -->
+    <string name="terminal_title">ASUI Terminal</string>
+    <string name="terminal_welcome">ASUI Terminal hazır. HELP yazarak komutları görebilirsin.</string>
+    <string name="terminal_exit">Terminal kapatılıyor...</string>
+    <string name="terminal_command_not_found">Komut bulunamadı</string>
+    <string name="terminal_path_not_found">Sistem belirtilen yolu bulamıyor</string>
+    <string name="terminal_root_mode">ASUI Terminal artık root modunda</string>
+    <string name="terminal_root_failed">Root erişimi alınamadı</string>
+    <string name="terminal_copy_to_clipboard">Çıktı panoya kopyalandı</string>
+    <string name="terminal_kill_process">^C</string>
+    <string name="terminal_help_header">ASUI Terminal komutları:</string>
+
+    <!-- Terminal komutları yardım -->
+    <string name="help_windows_cmd">=== Windows CMD ===</string>
+    <string name="help_cls">CLS / CLEAR       Ekranı temizle</string>
+    <string name="help_ver">VER               Sürüm</string>
+    <string name="help_title">TITLE &lt;metin&gt;     Başlığı değiştir</string>
+    <string name="help_color">COLOR &lt;kod&gt;       Konsol rengi</string>
+    <string name="help_set">SET               Ortam değişkenleri</string>
+    <string name="help_setvar">SET A=B           Değişken tanımla</string>
+    <string name="help_echo">ECHO &lt;metin&gt;      Metin yazdır</string>
+    <string name="help_cd">CD &lt;klasör&gt;       Klasör değiştir</string>
+    <string name="help_drive">C: / D:           Sürücü değiştir</string>
+    <string name="help_dir">DIR               Klasör içeriği</string>
+    <string name="help_tree">TREE              Klasör ağacı</string>
+    <string name="help_type">TYPE &lt;dosya&gt;      Dosya göster</string>
+    <string name="help_find">FIND "metin" dosya Dosyada ara</string>
+    <string name="help_tasklist">TASKLIST          Süreçleri göster</string>
+    <string name="help_taskkill">TASKKILL /PID N   Süreç sonlandır</string>
+    <string name="help_md">MD/MKDIR &lt;dizin&gt;  Dizin oluştur</string>
+    <string name="help_rd">RD/RMDIR &lt;dizin&gt;  Dizin sil</string>
+    <string name="help_del">DEL/ERASE &lt;dosya&gt; Dosya sil</string>
+    <string name="help_copy">COPY kaynak hedef Dosya kopyala</string>
+    <string name="help_move">MOVE kaynak hedef Dosya taşı</string>
+    <string name="help_ren">REN eski yeni     Yeniden adlandır</string>
+
+    <string name="help_advanced_root">=== Gelişmiş / Root ===</string>
+    <string name="help_exploit">EXPLOIT           Root exploit dene</string>
+    <string name="help_su">SU                Root modu (mevcutsa)</string>
+    <string name="help_whoami">WHOAMI            Kullanıcı/UID</string>
+    <string name="help_ipconfig">IPCONFIG          Ağ bilgisi</string>
+    <string name="help_getprop">GETPROP           Android özellikleri</string>
+    <string name="help_sysinfo">SYSINFO           Sistem bilgileri</string>
+    <string name="help_screenshot">SCREENSHOT        Ekran görüntüsü al</string>
+    <string name="help_fastboot">FASTBOOT ...      Fastboot komutları</string>
+
+    <string name="help_otg_adb">=== OTG / ADB ===</string>
+    <string name="help_otg_devices">OTG DEVICES       USB cihazlarını listele</string>
+    <string name="help_otg_permission">OTG PERMISSION N  USB erişim iste</string>
+    <string name="help_otg_adb_devices">OTG ADB DEVICES   ADB cihazlarını listele</string>
+    <string name="help_otg_adb_root">OTG ADB ROOT      ADB root modu</string>
+    <string name="help_otg_adb_shell">OTG ADB SHELL     ADB shell</string>
+    <string name="help_otg_adb_push">OTG ADB PUSH      Dosya gönder</string>
+    <string name="help_otg_adb_pull">OTG ADB PULL      Dosya al</string>
+    <string name="help_otg_adb_backup">OTG ADB BACKUP    Yedek al</string>
+    <string name="help_otg_adb_restore">OTG ADB RESTORE   Yedeği geri yükle</string>
+    <string name="help_otg_adb_record">OTG ADB SCREENRECORD Ekran kaydı</string>
+
+    <string name="help_virtual_desktop">=== Sanal Masaüstü / Widget ===</string>
+    <string name="help_vd_new">VIRTUAL DESKTOP NEW        Yeni masaüstü</string>
+    <string name="help_vd_switch">VIRTUAL DESKTOP SWITCH &lt;id&gt; Masaüstü değiştir</string>
+    <string name="help_widget_add">WIDGET ADD &lt;ad&gt;            Widget ekle</string>
+    <string name="help_theme_set">THEME SET dark/light       Tema değiştir</string>
+
+    <string name="help_other">=== Diğer ===</string>
+    <string name="help_rootguide">ROOTGUIDE         Root atma rehberi</string>
+    <string name="help_termux">TERMUX ...        Termux RUN_COMMAND köprüsü</string>
+    <string name="help_exit">EXIT              Terminali kapat</string>
+
+    <!-- ==============================================================
+         KİŞİSELLEŞTİRME (PersonalizationWindow)
+         ============================================================== -->
+    <string name="personalization_title">🎨 Kişiselleştir</string>
+    <string name="personalization_tab_general">Görünüm</string>
+    <string name="personalization_tab_colors">Renkler</string>
+    <string name="personalization_tab_taskbar">Görev Çubuğu</string>
+    <string name="personalization_tab_advanced">Gelişmiş</string>
+
+    <string name="personalization_theme">Tema</string>
+    <string name="personalization_theme_light">☀️ Açık</string>
+    <string name="personalization_theme_dark">🌙 Koyu</string>
+    <string name="personalization_theme_auto">🕒 Zamanlı</string>
+    <string name="personalization_theme_auto_desc">Güneş doğuşu/batışına göre otomatik geçiş</string>
+
+    <string name="personalization_wallpaper">Duvar Kağıdı</string>
+    <string name="personalization_wallpaper_select">📁 Seç</string>
+    <string name="personalization_wallpaper_default">🔄 Varsayılan</string>
+    <string name="personalization_wallpaper_slideshow">🔄 Slayt</string>
+    <string name="personalization_wallpaper_interval">Aralık: %d dk</string>
+
+    <string name="personalization_dynamic_wallpaper">🌀 Dinamik Duvar Kağıdı (Sensör renkleri)</string>
+    <string name="personalization_dynamic_wallpaper_desc">Işık ve sıcaklık sensörlerine göre renk değiştirir (demo)</string>
+
+    <string name="personalization_spirit_theme">🧘 Cihaz Ruhu Teması</string>
+    <string name="personalization_spirit_theme_desc">Cihaz kişiliğine göre otomatik renk ve tema önerir.</string>
+    <string name="personalization_spirit_analysis">Analiz: %s</string>
+
+    <string name="personalization_icon_size">Masaüstü Simge Boyutu</string>
+    <string name="personalization_icon_size_value">%d dp</string>
+
+    <string name="personalization_accent_color">Vurgu Rengi</string>
+    <string name="personalization_accent_color_selected">Seçilen: #%s</string>
+    <string name="personalization_accent_preview">Vurgu Rengi Aktif</string>
+    <string name="personalization_spirit_color">🧘 Cihaz Ruhu Rengi</string>
+    <string name="personalization_spirit_color_suggest">Cihaz kişiliğine göre önerilen renk: %s</string>
+    <string name="personalization_spirit_apply">Öneriyi Uygula</string>
+
+    <string name="personalization_taskbar_transparency">Görev Çubuğu Şeffaflığı</string>
+    <string name="personalization_taskbar_auto_hide">Otomatik Gizleme</string>
+    <string name="personalization_taskbar_auto_hide_active">Aktif</string>
+    <string name="personalization_taskbar_auto_hide_inactive">Pasif</string>
+    <string name="personalization_taskbar_alignment">Hizalama</string>
+    <string name="personalization_taskbar_alignment_left">⬅️ Sol</string>
+    <string name="personalization_taskbar_alignment_center">🔄 Orta</string>
+    <string name="personalization_taskbar_alignment_right">➡️ Sağ</string>
+    <string name="personalization_glass_effect">🔮 Cam Efekti (Windows 11)</string>
+    <string name="personalization_glass_effect_desc">Arka plan bulanıklığı ve şeffaflık ile cam görünümü</string>
+
+    <string name="personalization_animation_speed">Animasyon Hızı</string>
+    <string name="personalization_animation_speed_slow">🐢 Yavaş</string>
+    <string name="personalization_animation_speed_normal">⚡ Normal</string>
+    <string name="personalization_animation_speed_fast">🚀 Hızlı</string>
+
+    <string name="personalization_battery_assistant">🔋 Enerji Tasarrufu Asistanı</string>
+    <string name="personalization_battery_level">Pil seviyesi: %d%%</string>
+    <string name="personalization_battery_suggestion_low">Koyu tema ve kısıtlı animasyon önerilir.</string>
+    <string name="personalization_battery_suggestion_normal">Normal kullanım uygun.</string>
+    <string name="personalization_battery_apply_suggestion">Öneriyi Uygula</string>
+
+    <string name="personalization_spirit_widget">🧘 Ruh Halim</string>
+    <string name="personalization_magic_theme">🔮 Tema Sihirbazı</string>
+    <string name="personalization_magic_theme_apply">✨ Tema Sihirbazı: %1$s tema önerildi (İzin Skoru: %2$d%%)</string>
+    <string name="personalization_magic_button">🔮 Sihir</string>
+    <string name="personalization_magic_random">🎲 Sihirli Öner</string>
+    <string name="personalization_apply_and_close">Uygula ve Kapat</string>
+    <string name="personalization_reset_defaults">Varsayılana Dön</string>
+
+    <!-- ==============================================================
+         AYARLAR (SettingsWindow)
+         ============================================================== -->
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_category_system">Sistem</string>
+    <string name="settings_category_appearance">Görünüm</string>
+    <string name="settings_category_hardware">Donanım</string>
+    <string name="settings_category_permissions">İzinler</string>
+    <string name="settings_category_notifications">Bildirimler</string>
+    <string name="settings_category_storage">Depolama</string>
+    <string name="settings_category_advanced">Gelişmiş</string>
+
+    <string name="settings_system_summary">⏱ Çalışma Süresi: %s</string>
+    <string name="settings_system_cpu">⚡ CPU Kullanımı: %s</string>
+    <string name="settings_system_ram">💾 RAM Kullanımı: %s</string>
+    <string name="settings_system_storage">💿 Depolama: %s</string>
+    <string name="settings_system_battery">Pil: %1$d%% %2$s</string>
+    <string name="settings_system_battery_temp">🌡️ %s°C</string>
+    <string name="settings_system_battery_voltage">⚡ %sV</string>
+    <string name="settings_system_battery_rate">🔄 %s</string>
+    <string name="settings_system_screen_timeout">Ekran Zaman Aşımı</string>
+    <string name="settings_system_screen_timeout_seconds">%d saniye</string>
+    <string name="settings_system_power_saving">⚡ Güç Tasarrufu</string>
+    <string name="settings_system_power_saving_active">Aktif (koyu tema ve kısıtlı animasyon)</string>
+    <string name="settings_system_power_saving_inactive">Pasif</string>
+
+    <string name="settings_hardware_wifi">Wi-Fi</string>
+    <string name="settings_hardware_bluetooth">Bluetooth</string>
+    <string name="settings_hardware_airplane">Uçak Modu</string>
+    <string name="settings_hardware_rotation">Döndürme Kilidi</string>
+    <string name="settings_hardware_volume">Ses Seviyesi</string>
+    <string name="settings_hardware_brightness">Parlaklık</string>
+
+    <string name="settings_permissions_status">🔐 İzin Durumu</string>
+    <string name="settings_permissions_score">%1$d%% %2$s</string>
+    <string name="settings_permissions_good">🛡️ Tüm izinler verilmiş, güvendesin!</string>
+    <string name="settings_permissions_partial">⚠️ Bazı izinler eksik, uygulama kısıtlı çalışabilir.</string>
+    <string name="settings_permissions_bad">🔴 Birçok izin eksik! Lütfen izinleri ver.</string>
+    <string name="settings_permissions_request">Eksik İzinleri İste</string>
+    <string name="settings_permissions_summary">📋 İzin Özetini Göster</string>
+    <string name="settings_permissions_special">📌 Özel İzinler</string>
+    <string name="settings_permissions_special_granted">%s ✅</string>
+    <string name="settings_permissions_special_denied">%s ❌</string>
+    <string name="settings_permissions_special_goto">Ayarlara Git</string>
+    <string name="settings_permissions_special_grant">İzin Ver</string>
+    <string name="settings_permissions_spirit_recommendation">🧘 Ruh İzni</string>
+
+    <string name="settings_notifications_title">🔔 Bildirimler</string>
+    <string name="settings_notifications_count_active">%d aktif bildiriminiz var.</string>
+    <string name="settings_notifications_none">Bildirim yok.</string>
+    <string name="settings_notifications_clear_all">Tümünü Temizle</string>
+    <string name="settings_notifications_open_settings">Bildirim Ayarları</string>
+    <string name="settings_notifications_stats">📊 Bildirim İstatistikleri</string>
+    <string name="settings_notifications_top_apps">En çok bildirim gönderen:</string>
+    <string name="settings_notifications_no_stats">Henüz istatistik yok.</string>
+    <string name="settings_notifications_quiet_hours_active">🔇 Sessiz saatler: Aktif (23:00-07:00)</string>
+    <string name="settings_notifications_quiet_hours_inactive">🔇 Sessiz saatler: Pasif</string>
+    <string name="settings_notifications_smart_summary">🧠 Akıllı Özet</string>
+
+    <string name="settings_storage_title">💿 Depolama Alanı</string>
+    <string name="settings_storage_total">Toplam: %s</string>
+    <string name="settings_storage_used">Kullanılan: %s</string>
+    <string name="settings_storage_free">Boş: %s</string>
+    <string name="settings_storage_usage">Kullanım: %s</string>
+    <string name="settings_storage_external">💽 Harici Depolama (SD Kart)</string>
+    <string name="settings_storage_clear_cache">🧹 Önbellek Temizle</string>
+    <string name="settings_storage_clear_cache_desc">İkon ve geçici dosyaları temizler.</string>
+    <string name="settings_storage_clear_cache_button">Temizle</string>
+    <string name="settings_storage_cache_cleared">Önbellek temizlendi</string>
+
+    <string name="settings_advanced_magic_optimize">✨ Sihirli Optimizasyon</string>
+    <string name="settings_advanced_magic_optimize_desc">Tek tıkla pil, performans ve depolama optimizasyonu.</string>
+    <string name="settings_advanced_magic_optimize_button">🔮 Sihirli Optimizasyonu Başlat</string>
+    <string name="settings_advanced_magic_optimize_done">✨ Sihirli optimizasyon tamamlandı!</string>
+
+    <string name="settings_advanced_developer">🧪 Geliştirici Seçenekleri</string>
+    <string name="settings_advanced_show_logcat">📊 Logcat Göster</string>
+    <string name="settings_advanced_show_permission_summary">📋 İzin Özeti</string>
+
+    <string name="settings_advanced_reset_all">⚠️ Sıfırla</string>
+    <string name="settings_advanced_reset_all_desc">Tüm ayarları varsayılana döndürür. Bu işlem geri alınamaz.</string>
+    <string name="settings_advanced_reset_all_button">Tüm Ayarları Sıfırla</string>
+    <string name="settings_advanced_reset_all_done">Tüm ayarlar sıfırlandı</string>
+
+    <string name="settings_advanced_spirit_detail">🧘 Cihaz Ruhu Detayı</string>
+    <string name="settings_advanced_build_time">Build TIME: %s</string>
+
+    <!-- ==============================================================
+         KİLİT EKRANI (LockScreen)
+         ============================================================== -->
+    <string name="lockscreen_title">ASUI Desktop</string>
+    <string name="lockscreen_username">Kullanıcı</string>
+    <string name="lockscreen_password_hint">Şifre</string>
+    <string name="lockscreen_unlock">Oturum Aç</string>
+    <string name="lockscreen_emergency">Acil Durum</string>
+    <string name="lockscreen_wrong_password">Yanlış şifre. Kalan deneme: %d</string>
+    <string name="lockscreen_too_many_attempts">Çok fazla başarısız deneme. %d saniye bekleyin.</string>
+    <string name="lockscreen_locked">Kilitli</string>
+    <string name="lockscreen_unlock_hint">Oturum açmak için şifrenizi girin</string>
+    <string name="lockscreen_power_off">Kapat</string>
+    <string name="lockscreen_restart">Yeniden Başlat</string>
+    <string name="lockscreen_battery_level">Pil: %d%%</string>
+    <string name="lockscreen_charging">⚡</string>
+    <string name="lockscreen_wifi">Wi-Fi</string>
+
+    <!-- Biyometrik -->
+    <string name="biometric_title">ASUI Desktop</string>
+    <string name="biometric_subtitle">Parmak izi veya yüz ile oturum açın</string>
+    <string name="biometric_description">Cihazınızın biyometrik özelliğini kullanarak kilidi açın</string>
+    <string name="biometric_cancel">İptal</string>
+    <string name="biometric_failed">Parmak izi veya yüz tanınamadı. Tekrar deneyin.</string>
+
+    <!-- ==============================================================
+         MAGAZA (StoreWindow)
+         ============================================================== -->
+    <string name="store_title">ASUI Store</string>
+    <string name="store_beta">Beta</string>
+    <string name="store_search_hint">Uygulama ara...</string>
+    <string name="store_installed">📦 Yüklü Uygulamalar</string>
+    <string name="store_recommended">✨ Önerilen Uygulamalar</string>
+    <string name="store_loading">Uygulamalar yükleniyor...</string>
+    <string name="store_install">Yükle</string>
+    <string name="store_update">Güncelle</string>
+    <string name="store_open">Aç</string>
+    <string name="store_uninstall">Kaldır</string>
+    <string name="store_installed_status">✅ Yüklü</string>
+    <string name="store_not_installed">❌ Yüklü değil</string>
+    <string name="store_developer">Geliştirici: %s</string>
+    <string name="store_rating">⭐ %.1f</string>
+    <string name="store_installs">%s yükleme</string>
+    <string name="store_category">Kategori: %s</string>
+    <string name="store_description">Açıklama</string>
+    <string name="store_play_store_warning">📌 Bu uygulama Play Store üzerinden yönetilmektedir.</string>
+    <string name="store_open_in_play_store">Play Store\'da Aç</string>
+
+    <!-- ==============================================================
+         CİHAZ RUHU (DeviceInfo)
+         ============================================================== -->
+    <string name="device_spirit_superhero">🦸 Bu cihaz bir süper kahraman! (%1$d çekirdek, %2$dGB RAM ile uçar gider)</string>
+    <string name="device_spirit_balanced">🧘 Bu cihaz denge ustası (İşini görür, oyun da oynatır, iş de yaptırır)</string>
+    <string name="device_spirit_minimalist">📿 Bu cihaz minimalist bir bilge (Azla yetinir, ama çok şey başarır)</string>
+    <string name="device_spirit_gem">💎 Bu cihaz gizli bir mücevher (Kimse tahmin etmez, ama sen bilirsin)</string>
+    <string name="device_spirit_battery_good">✅ Mükemmel</string>
+    <string name="device_spirit_battery_warning">⚠️ Biraz bakım ister</string>
+    <string name="device_spirit_emulator">(Sanal dünyada yaşıyorsun, Matrix\'i sorgula 🤯)</string>
+    <string name="device_spirit_real">(Gerçek dünyada, ellerinle dokunabileceğin bir harika! ✨)</string>
+
+    <string name="device_amoled_burn_high">Yüksek</string>
+    <string name="device_amoled_burn_medium">Orta</string>
+    <string name="device_amoled_burn_low">Düşük</string>
+    <string name="device_amoled_burn_unknown">Orta (Bilinmiyor)</string>
+
+    <string name="device_root_magisk">Root (Magisk v%s) 🛡️</string>
+    <string name="device_root_traditional">Root (Geleneksel) ⚠️</string>
+    <string name="device_root_none">Root yok (Kullanıcı) 👤</string>
+
+    <!-- ==============================================================
+         İZİN YÖNETİMİ (PermissionManager)
+         ============================================================== -->
+    <string name="perm_why_need">Bu izin, uygulamanın düzgün çalışması için gereklidir.</string>
+    <string name="perm_denied_go_settings">İzin reddedildi. Lütfen Ayarlar\'dan manuel olarak izin verin.</string>
+    <string name="perm_go_settings">Ayarlara Git</string>
+    <string name="perm_go_back">Kapat</string>
+    <string name="perm_granted_all">Tüm izinler verildi ✅</string>
+    <string name="perm_missing_some">Bazı izinler eksik ⚠️</string>
+    <string name="perm_missing_many">Birçok izin eksik 🔴</string>
+    <string name="perm_spirit_superhero">🦸 Kamera ve mikrofon izinlerini vermeni öneririm, kahraman gibi görünmek lazım!</string>
+    <string name="perm_spirit_balanced">🧘 Konum ve sensör izinlerini ver, dengeyi sağlamak için.</string>
+    <string name="perm_spirit_minimalist">📿 Sadece en gerekli izinleri ver, gereksizlerden arın.</string>
+    <string name="perm_spirit_default">💎 Tüm izinleri ver, mücevher gibi parlarsın!</string>
+
+    <string name="perm_overlay_title">Sistem Üstü Görünüm</string>
+    <string name="perm_write_settings_title">Sistem Ayarlarını Düzenle</string>
+    <string name="perm_notification_title">Bildirim Erişimi</string>
+    <string name="perm_accessibility_title">Erişilebilirlik Servisi</string>
+
+    <!-- ==============================================================
+         HATA MESAJLARI
+         ============================================================== -->
+    <string name="err_activity_not_found">Activity bulunamadı, lütfen tekrar deneyin.</string>
+    <string name="err_context_not_initialized">Context başlatılmamış! Lütfen NotificationState.init() çağrısını yapın.</string>
+    <string name="err_permission_not_granted">İzin verilmedi</string>
+    <string name="err_unknown">Bilinmeyen hata oluştu</string>
+    <string name="err_network">Ağ bağlantısı hatası</string>
+    <string name="err_file_not_found">Dosya bulunamadı</string>
+    <string name="err_write_failed">Yazma hatası</string>
+    <string name="err_read_failed">Okuma hatası</string>
+
+    <!-- ==============================================================
+         GİZLİ / MİZAHİ MESAJLAR (Easter Eggs)
+         ============================================================== -->
+    <string name="easter_egg_title">🎉 Sürpriz!</string>
+    <string name="easter_egg_message">🎊 ASUI Desktop\'un gizli gücü aktive edildi!</string>
+    <string name="easter_egg_click_me">🎯</string>
+    <string name="easter_egg_developer_menu_hint">Geliştirici menüsü için %d tıklama kaldı</string>
+    <string name="easter_egg_magic_toast">🎲 Sihirli tema uygulandı!</string>
+    <string name="easter_egg_logcat_title">Logcat (son 30 satır)</string>
+    <string name="easter_egg_logcat_error">Logcat alınamadı: %s</string>
+    <string name="easter_egg_permission_summary_short">📋 İzin özeti gösterildi</string>
+
+    <!-- ==============================================================
+         NAMED FORMATS (Biçimlendirmeler)
+         ============================================================== -->
+    <string name="format_unknown">Bilinmiyor</string>
+    <string name="format_date_time">dd.MM.yyyy HH:mm</string>
+    <string name="format_date">dd.MM.yyyy</string>
+    <string name="format_time">HH:mm:ss</string>
+    <string name="format_percent">%d%%</string>
+    <string name="format_degrees_celsius">%s°C</string>
+    <string name="format_voltage">%sV</string>
+    <string name="format_size_b">%d B</string>
+    <string name="format_size_kb">%.1f KB</string>
+    <string name="format_size_mb">%.1f MB</string>
+    <string name="format_size_gb">%.1f GB</string>
+
+    <!-- ==============================================================
+         DIĞER
+         ============================================================== -->
+    <string name="desktop_item_folder">Klasör</string>
+    <string name="desktop_item_app">Uygulama</string>
+    <string name="desktop_item_widget">Widget</string>
+    <string name="desktop_item_system">Sistem</string>
+    <string name="recycle_bin_title">Geri Dönüşüm Kutusu</string>
+    <string name="recycle_bin_empty">Geri Dönüşüm Kutusu boş</string>
+    <string name="recycle_bin_restore">Geri Yükle</string>
+    <string name="recycle_bin_empty_all">Çöp Kutusunu Boşalt</string>
+
+    <string name="widget_clock">Saat</string>
+    <string name="widget_weather">Hava Durumu</string>
+    <string name="widget_notes">Notlar</string>
+    <string name="widget_system_monitor">Sistem Monitörü</string>
+    <string name="widget_calendar">Takvim</string>
+
+    <string name="theme_light">Açık</string>
+    <string name="theme_dark">Koyu</string>
+
+    <string name="unknown">Bilinmiyor</string>
+    <string name="none">Yok</string>
+    <string name="active">Aktif</string>
+    <string name="inactive">Pasif</string>
+    <string name="enabled">Etkin</string>
+    <string name="disabled">Devre dışı</string>
+
+    <string name="on">Açık</string>
+    <string name="off">Kapalı</string>
+
+    <!-- ==============================================================
+         BAŞLATICI / LAUNCHER
+         ============================================================== -->
+    <string name="launcher_name">ASUI Desktop</string>
+    <string name="launcher_shortcut_settings">Ayarlar</string>
+    <string name="launcher_shortcut_terminal">Terminal</string>
+    <string name="launcher_shortcut_personalize">Kişiselleştir</string>
+</resources>

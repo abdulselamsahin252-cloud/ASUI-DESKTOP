@@ -1,0 +1,217 @@
+openjdk version "17.0.19" 2026-04-21
+OpenJDK Runtime Environment (build 17.0.19+10-1-26.04.2-Ubuntu)
+OpenJDK 64-Bit Server VM (build 17.0.19+10-1-26.04.2-Ubuntu, mixed mode, sharing)
+Reusing configuration cache.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :winlator:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :winlator:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :winlator:writeDebugAarMetadata UP-TO-DATE
+> Task :winlator:prepareLintJarForPublish UP-TO-DATE
+> Task :winlator:generateDebugResValues UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :winlator:javaPreCompileDebug UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :winlator:extractDeepLinksDebug UP-TO-DATE
+> Task :winlator:processDebugManifest UP-TO-DATE
+> Task :winlator:processDebugJavaRes NO-SOURCE
+> Task :winlator:mergeDebugShaders UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :winlator:compileDebugShaders NO-SOURCE
+> Task :winlator:generateDebugAssets UP-TO-DATE
+> Task :winlator:packageDebugAssets UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :winlator:generateDebugResources UP-TO-DATE
+> Task :winlator:packageDebugResources UP-TO-DATE
+> Task :winlator:configureCMakeDebug[arm64-v8a]
+> Task :winlator:mergeDebugJniLibFolders UP-TO-DATE
+> Task :winlator:compileDebugLibraryResources UP-TO-DATE
+> Task :winlator:parseDebugLocalResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :winlator:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :winlator:prepareDebugArtProfile UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :winlator:mergeDebugJavaResource UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :winlator:buildCMakeDebug[arm64-v8a]
+> Task :winlator:mergeDebugNativeLibs UP-TO-DATE
+> Task :winlator:stripDebugDebugSymbols UP-TO-DATE
+> Task :winlator:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :winlator:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :winlator:generateDebugRFile UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :winlator:extractDebugAnnotations UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :winlator:compileDebugJavaWithJavac
+/WindowsUI/winlator/src/main/java/com/winlator/XServerDisplayActivity.java:364: error: constant expression required
+            case R.id.menu_item_keyboard:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/XServerDisplayActivity.java:368: error: constant expression required
+            case R.id.menu_item_input_controls:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/XServerDisplayActivity.java:372: error: constant expression required
+            case R.id.menu_item_toggle_fullscreen:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/XServerDisplayActivity.java:376: error: constant expression required
+            case R.id.menu_item_task_manager:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/XServerDisplayActivity.java:380: error: constant expression required
+            case R.id.menu_item_active_windows:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/XServerDisplayActivity.java:384: error: constant expression required
+            case R.id.menu_item_magnifier:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/XServerDisplayActivity.java:401: error: constant expression required
+            case R.id.menu_item_screen_effect:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/XServerDisplayActivity.java:405: error: constant expression required
+            case R.id.menu_item_pip_mode:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/XServerDisplayActivity.java:412: error: constant expression required
+            case R.id.menu_item_logs:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/XServerDisplayActivity.java:416: error: constant expression required
+            case R.id.menu_item_touchpad_help:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/XServerDisplayActivity.java:419: error: constant expression required
+            case R.id.menu_item_exit:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/MainActivity.java:189: error: constant expression required
+            case R.id.menu_item_shortcuts:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/MainActivity.java:193: error: constant expression required
+            case R.id.menu_item_containers:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/MainActivity.java:197: error: constant expression required
+            case R.id.menu_item_input_controls:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/MainActivity.java:200: error: constant expression required
+            case R.id.menu_item_settings:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/MainActivity.java:203: error: constant expression required
+            case R.id.menu_item_about:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerDetailFragment.java:513: error: constant expression required
+                case R.id.menu_item_open_directory:
+                         ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerDetailFragment.java:523: error: constant expression required
+                case R.id.menu_item_downloads:
+                         ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerDetailFragment.java:527: error: constant expression required
+                case R.id.menu_item_internal_storage:
+                         ^
+/WindowsUI/winlator/src/main/java/com/winlator/winhandler/TaskManagerDialog.java:194: error: constant expression required
+                case R.id.menu_item_process_affinity:
+                         ^
+/WindowsUI/winlator/src/main/java/com/winlator/winhandler/TaskManagerDialog.java:197: error: constant expression required
+                case R.id.menu_item_bring_to_front:
+                         ^
+/WindowsUI/winlator/src/main/java/com/winlator/winhandler/TaskManagerDialog.java:201: error: constant expression required
+                case R.id.menu_item_end_process:
+                         ^
+/WindowsUI/winlator/src/main/java/com/winlator/ShortcutsFragment.java:195: error: constant expression required
+                    case R.id.menu_item_settings:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ShortcutsFragment.java:199: error: constant expression required
+                    case R.id.menu_item_copy:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ShortcutsFragment.java:200: error: constant expression required
+                    case R.id.menu_item_cut:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ShortcutsFragment.java:203: error: constant expression required
+                    case R.id.menu_item_remove:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainersFragment.java:149: error: constant expression required
+                    case R.id.menu_item_file_manager:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainersFragment.java:152: error: constant expression required
+                    case R.id.menu_item_edit:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainersFragment.java:155: error: constant expression required
+                    case R.id.menu_item_duplicate:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainersFragment.java:164: error: constant expression required
+                    case R.id.menu_item_remove:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainersFragment.java:173: error: constant expression required
+                    case R.id.menu_item_info:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ControlsEditorActivity.java:118: error: constant expression required
+            case R.id.BTAddElement:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/ControlsEditorActivity.java:123: error: constant expression required
+            case R.id.BTRemoveElement:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/ControlsEditorActivity.java:128: error: constant expression required
+            case R.id.BTElementSettings:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerFileManagerFragment.java:141: error: constant expression required
+            case R.id.menu_item_home:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerFileManagerFragment.java:145: error: constant expression required
+            case R.id.menu_item_view_style:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerFileManagerFragment.java:150: error: constant expression required
+            case R.id.menu_item_new_folder:
+                     ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerFileManagerFragment.java:347: error: constant expression required
+                    case R.id.menu_item_copy:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerFileManagerFragment.java:348: error: constant expression required
+                    case R.id.menu_item_cut:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerFileManagerFragment.java:351: error: constant expression required
+                    case R.id.menu_item_remove:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerFileManagerFragment.java:355: error: constant expression required
+                    case R.id.menu_item_rename:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerFileManagerFragment.java:362: error: constant expression required
+                    case R.id.menu_item_add_favorite:
+                             ^
+/WindowsUI/winlator/src/main/java/com/winlator/ContainerFileManagerFragment.java:365: error: constant expression required
+                    case R.id.menu_item_info:
+                             ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+43 errors
+
+> Task :winlator:compileDebugJavaWithJavac FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':winlator:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 59s
+51 actionable tasks: 3 executed, 48 up-to-date
+Configuration cache entry reused.

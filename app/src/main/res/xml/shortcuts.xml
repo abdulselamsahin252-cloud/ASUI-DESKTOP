@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:shortcutShortLabel="@string/launcher_shortcut_settings"
+        android:shortcutLongLabel="@string/launcher_shortcut_settings">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.windowsui"
+            android:targetClass="com.windowsui.SettingsWindow" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="terminal"
+        android:enabled="true"
+        android:icon="@drawable/ic_terminal"
+        android:shortcutShortLabel="@string/launcher_shortcut_terminal"
+        android:shortcutLongLabel="@string/launcher_shortcut_terminal">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.windowsui"
+            android:targetClass="com.windowsui.CmdTerminal" />
+    </shortcut>
+</shortcuts>

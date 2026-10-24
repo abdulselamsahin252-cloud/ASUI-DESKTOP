@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_security.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/security.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_battery.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/battery.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_notification.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/notification.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.windowsui.app-main-6:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/anim_fade_out.xml.flat",
+        "source": "com.windowsui.app-main-6:/anim/fade_out.xml"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_location.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/location.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_airplane.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/airplane.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_wallpaper.jpg.flat",
+        "source": "com.windowsui.app-main-6:/drawable/wallpaper.jpg"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/xml_accessibility_service_config.xml.flat",
+        "source": "com.windowsui.app-main-6:/xml/accessibility_service_config.xml"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_mic.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/mic.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/xml_provider_paths.xml.flat",
+        "source": "com.windowsui.app-main-6:/xml/provider_paths.xml"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_ic_settings.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/ic_settings.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.windowsui.app-main-6:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_wifi.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/wifi.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_pin_inactive.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/pin_inactive.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.windowsui.app-main-6:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.windowsui.app-main-6:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_usb.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/usb.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_volume.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/volume.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_ic_terminal.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/ic_terminal.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_start.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/start.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_recycle_bin_full.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/recycle_bin_full.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.windowsui.app-main-6:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_search.jpg.flat",
+        "source": "com.windowsui.app-main-6:/drawable/search.jpg"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_bluetooth.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/bluetooth.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/xml_shortcuts.xml.flat",
+        "source": "com.windowsui.app-main-6:/xml/shortcuts.xml"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_arrow.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/arrow.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_cloud.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/cloud.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/anim_slide_out_bottom.xml.flat",
+        "source": "com.windowsui.app-main-6:/anim/slide_out_bottom.xml"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_settings.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/settings.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/anim_fade_in.xml.flat",
+        "source": "com.windowsui.app-main-6:/anim/fade_in.xml"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_pin_active.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/pin_active.png"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/anim_slide_in_bottom.xml.flat",
+        "source": "com.windowsui.app-main-6:/anim/slide_in_bottom.xml"
+    },
+    {
+        "merged": "com.windowsui.app-debug-4:/drawable_recycle_bin_empty.png.flat",
+        "source": "com.windowsui.app-main-6:/drawable/recycle_bin_empty.png"
+    }
+]

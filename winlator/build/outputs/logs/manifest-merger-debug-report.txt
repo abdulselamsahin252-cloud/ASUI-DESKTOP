@@ -1,0 +1,144 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /WindowsUI/winlator/src/main/AndroidManifest.xml:2:1-62:12
+	package
+		INJECTED from /WindowsUI/winlator/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:2:11-69
+uses-feature#0x00020000
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:3:5-5:35
+	android:glEsVersion
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:4:9-41
+	android:required
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:5:9-32
+uses-permission#android.permission.INTERNET
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:9:5-75
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:9:22-73
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:11:22-77
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:12:22-77
+uses-permission#android.permission.VIBRATE
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:13:22-63
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:14:5-76
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:14:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:15:5-77
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:15:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:16:5-92
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:16:22-89
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:17:22-65
+application
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:19:5-61:19
+activity#com.winlator.MainActivity
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:21:9-25:137
+	android:screenOrientation
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:24:13-47
+	android:exported
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:23:13-37
+	android:configChanges
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:25:13-134
+	android:theme
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:22:13-48
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:21:19-59
+activity#com.winlator.XServerDisplayActivity
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:27:9-33:59
+	android:screenOrientation
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:33:13-56
+	android:launchMode
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:28:13-37
+	android:supportsPictureInPicture
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:30:13-52
+	android:configChanges
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:32:13-134
+	android:theme
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:29:13-58
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:27:19-69
+activity#com.winlator.ControlsEditorActivity
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:35:9-38:59
+	android:screenOrientation
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:38:13-56
+	android:exported
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:36:13-37
+	android:theme
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:37:13-58
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:35:19-69
+activity#com.winlator.ExternalControllerBindingsActivity
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:40:9-43:50
+	android:screenOrientation
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:43:13-47
+	android:exported
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:42:13-37
+	android:theme
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:41:13-48
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:40:19-81
+service#com.winlator.services.ForegroundService
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:45:9-50:44
+	android:enabled
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:47:13-35
+	android:exported
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:48:13-37
+	android:stopWithTask
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:50:13-41
+	android:foregroundServiceType
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:49:13-58
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:46:13-67
+provider#com.winlator.AsuiFileProvider
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:52:9-60:20
+	android:grantUriPermissions
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:56:13-47
+	android:authorities
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:54:13-60
+	android:exported
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:55:13-37
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:53:13-57
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:57:13-59:53
+	android:resource
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:59:17-51
+	android:name
+		ADDED from /WindowsUI/winlator/src/main/AndroidManifest.xml:58:17-67
+uses-sdk
+INJECTED from /WindowsUI/winlator/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /WindowsUI/winlator/src/main/AndroidManifest.xml
+INJECTED from /WindowsUI/winlator/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /WindowsUI/winlator/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /WindowsUI/winlator/src/main/AndroidManifest.xml

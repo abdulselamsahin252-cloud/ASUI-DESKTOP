@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    =====================================================================
+    ASUI Desktop - FileProvider Yol Yapılandırması
+    =====================================================================
+
+    Bu dosya, FileProvider ile paylaşılan dosya yollarını tanımlar.
+    Tüm modüller (FileExplorer, CmdTerminal, StoreWindow, OtgAdbBridge,
+    BinaryManager, IconManager, NotificationState, vb.) bu yapılandırmayı
+    kullanarak dosyalara güvenli erişim sağlar.
+
+    🚀 "Akla Hayale Gelmez" Özellikler (Yapılandırma):
+    - Her yol, hangi modül tarafından kullanıldığına dair detaylı açıklama içerir.
+    - Root-path ile sistem dosyalarına erişim (root modunda).
+    - USB OTG cihazları için mount noktaları (root-path ile).
+    - BinaryManager, TermuxBridge, OtgAdbBridge için özel dizinler.
+    - Cache yolları, geçici dosyalar için optimize edilmiştir.
+    - Tekrarlayan tanımlamalardan kaçınılmış, sadeleştirilmiştir.
+
+    Kullanım: FileProvider.getUriForFile(context, "${applicationId}.fileprovider", file)
+    =====================================================================
+-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ================================================================
+         UYGULAMA İÇİ DOSYA DİZİNLERİ (files-path)
+         ================================================================ -->
+
+    <!-- 1. Uygulamanın özel dosya dizini (tam erişim)
+         - BinaryManager: adb, fastboot, busybox, sh, su binary'leri (bin/ altında)
+         - DesktopState: masaüstü düzeni, simge konumları, widget verileri
+         - SystemState: kullanıcı profili, tema, ayarlar
+         - WindowState: pencere durumları, z-index, konum/boyut
+         - NotificationState: bildirim geçmişi, istatistikler (dosya olarak)
+         - PermissionManager: izin geçmişi (yedek)
+         - TermuxBridge: Termux çalışma dizini (home/ altında)
+         - IconManager: önbelleğe alınmış ikonlar
+         - Bu yol, altındaki tüm alt dizinleri (bin/, home/, profiles/, backups/, vb.) kapsar.
+    -->
+    <files-path name="internal_files" path="." />
+
+    <!-- 2. Uygulama önbellek dizini (cache-path)
+         - IconManager: önbelleğe alınmış ikonlar (geçici)
+         - FileExplorer: küçük resim (thumbnail) önbelleği
+         - StoreWindow: indirilen APK'lar (geçici)
+         - CmdTerminal: geçici çıktı dosyaları (termux_output_*.txt)
+         - OtgAdbBridge: geçici ADB pull/push dosyaları
+    -->
+    <cache-path name="cache" path="." />
+
+    <!-- ================================================================
+         HARİCİ DEPOLAMA (Paylaşımlı Kullanıcı Depolaması)
+         ================================================================ -->
+
+    <!-- 3. Uygulamaya özel harici dosya dizini (external-files-path)
+         - Android/data/com.windowsui/files/ altındaki tüm dosyaları kapsar
+         - FileExplorer: kullanıcı dosyaları (belgeler, resimler, vb.)
+         - StoreWindow: indirilen APK'lar (kalıcı)
+         - CmdTerminal: screenshot, screenrecord çıktıları
+         - OtgAdbBridge: ADB push/pull için hedef dizin
+    -->
+    <external-files-path name="external_files" path="." />
+
+    <!-- 4. Harici kök depolama (external-path)
+         - /storage/emulated/0/ (SD kart veya dahili depolama)
+         - FileExplorer: dosya gezgini ile tüm harici depolamaya erişim
+         - CmdTerminal: D: sürücüsü olarak kullanılır
+         - OtgAdbBridge: ADB ile cihaz dosyalarına erişim
+         - UsbOtgManager: USB OTG cihazlarının mount noktaları (/storage/...)
+         - Bu yol, /storage/emulated/0/ altındaki tüm dosya ve klasörleri kapsar.
+    -->
+    <external-path name="storage" path="." />
+
+    <!-- 5. Harici önbellek (external-cache-path)
+         - Büyük dosyalar için geçici depolama (ör. ADB pull ile alınan büyük dosyalar)
+         - Geçici olarak indirilen veya oluşturulan büyük dosyalar
+    -->
+    <external-cache-path name="external_cache" path="." />
+
+    <!-- ================================================================
+         SİSTEM KÖKÜ (ROOT) - YALNIZCA ROOT MODUNDA
+         ================================================================ -->
+
+    <!-- 6. Sistem kök dizini (root-path) - / (system root)
+         - BinaryManager: /system/bin, /system/xbin, /sbin, /data/local/tmp
+         - FileExplorer: root modunda sistem dosyalarına erişim
+         - CmdTerminal: root komutları (su ile)
+         - OtgAdbBridge: root ADB komutları
+         - HardwareController: /sys/class/thermal, /proc/stat, /dev/block/sd* (USB mount)
+         - DİKKAT: Bu yalnızca root izni olan cihazlarda ve kullanıcı bilinçli olarak
+           root modunu etkinleştirdiğinde kullanılmalıdır.
+    -->
+    <root-path name="root" path="." />
+
+    <!-- 7. USB OTG Mount Noktaları (root-path)
+         - UsbOtgManager: /mnt/media_rw/... dizinleri (OTG cihazlarının bağlantı noktaları)
+         - FileExplorer: USB cihazlarına erişim (root modunda)
+         - Not: external-path ile değil, root-path ile tanımlanmalıdır çünkü /mnt/ sistem kökündedir.
+    -->
+    <root-path name="usb_otg_mount" path="mnt/media_rw/" />
+
+    <!-- ================================================================
+         NOTLAR:
+         - path="." ifadesi, o kök dizinin tamamını (tüm alt dizinleriyle) kapsar.
+           Bu nedenle alt dizinleri ayrıca tanımlamaya gerek yoktur.
+         - Aynı kök dizini farklı isimlerle tanımlamak çakışmaya yol açar,
+           bu yüzden her kök için tek bir isim kullanılmıştır.
+         - root-path yalnızca root izni olan cihazlarda çalışır.
+    ================================================================ -->
+
+</paths>

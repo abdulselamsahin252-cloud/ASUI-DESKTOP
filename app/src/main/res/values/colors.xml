@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ====================================================================
+     COLORS.XML – TAM VE HATASIZ (ÖNEMLİ RENKLER)
+     ==================================================================== -->
+<resources>
+    <!-- Ana Renkler -->
+    <color name="accent_blue">#0078D7</color>
+    <color name="accent_blue_dark">#005A9E</color>
+    <color name="accent_blue_light">#4A9EFF</color>
+    <color name="accent_blue_alpha_20">#330078D7</color>
+    <color name="accent_blue_alpha_30">#4D0078D7</color>
+
+    <!-- Temel Renkler -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Gri Tonları -->
+    <color name="gray_900">#111827</color>
+    <color name="gray_800">#1F2937</color>
+    <color name="gray_700">#374151</color>
+    <color name="gray_600">#4B5563</color>
+    <color name="gray_500">#6B7280</color>
+    <color name="gray_400">#9CA3AF</color>
+    <color name="gray_300">#D1D5DB</color>
+    <color name="gray_200">#E5E7EB</color>
+    <color name="gray_100">#F3F4F6</color>
+    <color name="gray_50">#F9FAFB</color>
+
+    <!-- Masaüstü -->
+    <color name="desktop_background_light">#E9ECEF</color>
+    <color name="desktop_background_dark">#1A1A1A</color>
+
+    <!-- Metin -->
+    <color name="text_primary_light">#000000</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_light">#6B7280</color>
+    <color name="text_secondary_dark">#9CA3AF</color>
+
+    <!-- Durum Renkleri -->
+    <color name="green_500">#10A000</color>
+    <color name="green_600">#0D7A00</color>
+    <color name="green_100">#E8F5E9</color>
+    <color name="red_500">#E53935</color>
+    <color name="red_600">#C62828</color>
+    <color name="red_100">#FFEBEE</color>
+    <color name="yellow_500">#FFA000</color>
+    <color name="yellow_100">#FFF8E1</color>
+
+    <!-- Bildirim -->
+    <color name="notification_background_dark">#1C1C1C</color>
+    <color name="notification_card_dark">#2A2A2A</color>
+</resources>

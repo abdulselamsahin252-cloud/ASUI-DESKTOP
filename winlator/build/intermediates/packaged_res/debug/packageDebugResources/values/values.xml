@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="audio_driver_entries">
+        <item>ALSA</item>
+        <item>PulseAudio</item>
+    </string-array>
+    <string-array name="audio_performance_mode_entries">
+        <item>@string/none</item>
+        <item>@string/low_latency</item>
+        <item>@string/power_saving</item>
+    </string-array>
+    <string-array name="binding_type_entries">
+        <item>Keyboard</item>
+        <item>Mouse</item>
+        <item>Gamepad</item>
+    </string-array>
+    <string-array name="box64_logs">
+        <item>@string/disable</item>
+        <item>@string/minimal</item>
+        <item>@string/trace</item>
+    </string-array>
+    <string-array name="d3d_feature_level_entries">
+        <item>11.0</item>
+        <item>11.1</item>
+        <item>12.0</item>
+        <item>12.1</item>
+        <item>12.2</item>
+    </string-array>
+    <string-array name="ddraw_wrapper_entries">
+        <item>WineD3D</item>
+        <item>CNC DDraw</item>
+        <item>D7VK</item>
+    </string-array>
+    <string-array name="desktop_background_type_entries">
+        <item>@string/image</item>
+        <item>@string/solid_color</item>
+    </string-array>
+    <string-array name="dinput_mapper_type_entries">
+        <item>Standard</item>
+        <item>XInput</item>
+    </string-array>
+    <string-array name="dxvk_framerate_entries">
+        <item>@string/zero_no_limit</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </string-array>
+    <string-array name="hud_mode_entries">
+        <item>@string/disabled</item>
+        <item>@string/simple_fps</item>
+        <item>@string/full</item>
+    </string-array>
+    <string-array name="image_cache_size_entries">
+        <item>64 MB</item>
+        <item>128 MB</item>
+        <item>256 MB</item>
+        <item>512 MB</item>
+        <item>1024 MB</item>
+    </string-array>
+    <string-array name="language_entries">
+        <item>English</item>
+        <item>Português</item>
+        <item>Русский</item>
+    </string-array>
+    <string-array name="max_device_memory_entries">
+        <item>@string/zero_no_limit</item>
+        <item>512 MB</item>
+        <item>1 GB</item>
+        <item>2 GB</item>
+        <item>4 GB</item>
+        <item>6 GB</item>
+        <item>8 GB</item>
+        <item>12 GB</item>
+    </string-array>
+    <string-array name="midi_channel_entries">
+        <item>Ch1</item>
+        <item>Drum (Ch10)</item>
+    </string-array>
+    <string-array name="opengl_version_entries">
+        <item>2.0</item>
+        <item>2.1</item>
+        <item>3.0</item>
+        <item>3.1</item>
+        <item>3.2</item>
+        <item>3.3</item>
+        <item>4.0</item>
+    </string-array>
+    <string-array name="present_mode_entries">
+        <item>immediate</item>
+        <item>mailbox</item>
+        <item>fifo</item>
+    </string-array>
+    <string-array name="resource_memory_type_entries">
+        <item>@string/auto</item>
+        <item>Opaque FD</item>
+        <item>DMA Buffer</item>
+        <item>Native Hardware Buffer</item>
+    </string-array>
+    <string-array name="screen_size_entries">
+        <item>@string/custom</item>
+        <item>@string/native_resolution</item>
+        <item>640x360 (16:9)</item>
+        <item>640x480 (4:3)</item>
+        <item>800x600 (4:3)</item>
+        <item>854x480 (16:9)</item>
+        <item>960x544 (16:9)</item>
+        <item>1024x768 (4:3)</item>
+        <item>1280x720 (16:9)</item>
+        <item>1280x800 (16:10)</item>
+        <item>1280x1024 (5:4)</item>
+        <item>1366x768 (16:9)</item>
+        <item>1440x900 (16:10)</item>
+        <item>1600x900 (16:9)</item>
+        <item>1920x1080 (16:9)</item>
+    </string-array>
+    <string-array name="startup_selection_entries">
+        <item>@string/startup_selection_normal</item>
+        <item>@string/startup_selection_essential</item>
+        <item>@string/startup_selection_aggressive</item>
+    </string-array>
+    <string-array name="system_font_entries">
+        <item>Arial</item>
+        <item>Andale Mono</item>
+        <item>Comic Sans MS</item>
+        <item>Courier New</item>
+        <item>Georgia</item>
+        <item>Impact</item>
+        <item>Tahoma</item>
+        <item>Times New Roman</item>
+        <item>Trebuchet MS</item>
+        <item>Verdana</item>
+    </string-array>
+    <string-array name="video_memory_size_entries">
+        <item>32 MB</item>
+        <item>64 MB</item>
+        <item>128 MB</item>
+        <item>256 MB</item>
+        <item>512 MB</item>
+        <item>1 GB</item>
+        <item>2 GB</item>
+        <item>4 GB</item>
+        <item>6 GB</item>
+        <item>8 GB</item>
+        <item>12 GB</item>
+    </string-array>
+    <string-array name="vk_version_entries">
+        <item>1.0</item>
+        <item>1.1</item>
+        <item>1.2</item>
+        <item>1.3</item>
+    </string-array>
+    <string-array name="wincomponent_entries">
+        <item>@string/builtin_wine</item>
+        <item>@string/native_windows</item>
+    </string-array>
+    <string-array name="wined3d_renderer_entries">
+        <item>GDI</item>
+        <item>GL</item>
+        <item>Vulkan</item>
+    </string-array>
+    <attr format="color" name="colorPrimaryText"/>
+    <attr format="color" name="colorSecondarySurface"/>
+    <attr format="color" name="colorSecondaryText"/>
+    <attr format="integer|float" name="maxValue"/>
+    <attr format="integer|float" name="minValue"/>
+    <attr format="reference" name="preloaderBackground"/>
+    <attr format="reference" name="progressBarIndeterminateImage"/>
+    <attr format="integer|float" name="step"/>
+    <attr format="dimension" name="textSize"/>
+    <attr format="reference" name="toolboxBackground"/>
+    <attr format="float" name="value"/>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <string name="_new">new</string>
+    <string name="a_network_error_occurred">A network error occurred</string>
+    <string name="about">About</string>
+    <string name="active_windows">Active Windows</string>
+    <string name="add">Add</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="adrenotools_driver" translatable="false">Adrenotools Driver</string>
+    <string name="advanced">Advanced</string>
+    <string name="app_name">Winlator</string>
+    <string name="audio">Audio</string>
+    <string name="audio_driver">Audio Driver</string>
+    <string name="auto">Auto</string>
+    <string name="average_latency">Average Latency</string>
+    <string name="background">Background</string>
+    <string name="battery">Battery</string>
+    <string name="binding">Binding</string>
+    <string name="binding_down">Binding Down</string>
+    <string name="binding_left">Binding Left</string>
+    <string name="binding_right">Binding Right</string>
+    <string name="binding_up">Binding Up</string>
+    <string name="bindings">Bindings</string>
+    <string name="both">Both</string>
+    <string name="box64" translatable="false">Box64</string>
+    <string name="box64_env_var_help__dynarec_bigblock" translatable="false"><![CDATA[
+        Dynarec building BigBlock<br /><br />
+        <b>0</b> : Don\'t try to build block as big as possible<br />
+        <b>1</b> : Build Dynarec block as big as possible<br />
+        <b>2</b> : Build Dynarec block bigger (continue when block overlaps, but only for blocks in elf memory)<br />
+        <b>3</b> : Build Dynarec block bigger (continue when block overlaps, for all types of memory)
+    ]]></string>
+    <string name="box64_env_var_help__dynarec_callret" translatable="false">Optimization of CALL/RET opcodes</string>
+    <string name="box64_env_var_help__dynarec_fastnan" translatable="false">Generation of -NAN like on x86</string>
+    <string name="box64_env_var_help__dynarec_fastround" translatable="false"><![CDATA[
+        Generation of precise x86 rounding<br /><br />
+        <b>0</b> : Generate float/double -> int rounding like on x86<br />
+        <b>1</b> : Don\'t do anything special with edge case Rounding, to go as fast as possible (no INF/NAN/Overflow -> MIN_INT conversion)<br />
+        <b>2</b> : Everything from 1 plus also fast round of double -> float (not taking into account current rounding mode)
+    ]]></string>
+    <string name="box64_env_var_help__dynarec_forward" translatable="false">Defines the max allowed forward value when building Block</string>
+    <string name="box64_env_var_help__dynarec_nativeflags" translatable="false">The generated code will use native flags, if possible</string>
+    <string name="box64_env_var_help__dynarec_safeflags" translatable="false"><![CDATA[
+        Handling of flags on CALL/RET opcodes<br /><br />
+        <b>0</b> : Treats CALL/RET as if it never needed flags (faster, unstable)<br />
+        <b>1</b> : Most RET will need flags, most CALLS will not<br />
+        <b>2</b> : All CALL/RET will need flags (slower)
+    ]]></string>
+    <string name="box64_env_var_help__dynarec_strongmem" translatable="false"><![CDATA[
+        Simulation of Strong Memory model<br /><br />
+        <b>0</b> : Don\'t try anything special<br />
+        <b>1</b> : Enable some Memory Barrier when writing to memory (on some MOV opcode)<br />
+        <b>2</b> : All 1 plus a Memory Barrier on every write to memory using MOV<br />
+        <b>3</b> : All 2 plus Memory Barrier when reading from memory and on some SSE/SSE2 opcodes
+    ]]></string>
+    <string name="box64_env_var_help__dynarec_wait" translatable="false">Defines whether or not Dynarec will wait for the FillBlock to be ready</string>
+    <string name="box64_env_var_help__dynarec_weakbarrier" translatable="false"><![CDATA[
+        Tweak the memory barriers to reduce the performance impact by strongmem<br /><br />
+        <b>0</b> : Use regular safe barrier<br />
+        <b>1</b> : Use weak barriers to have more performance boost<br />
+        <b>2</b> : All in 1, plus disabled the last write barriers
+    ]]></string>
+    <string name="box64_env_var_help__dynarec_x87double" translatable="false">Use of Float/Double for x87 emulation</string>
+    <string name="box64_logs">Box64 Logs</string>
+    <string name="box64_preset">Box64 Preset</string>
+    <string name="box64_version">Box64 Version</string>
+    <string name="brightness">Brightness</string>
+    <string name="bring_to_front">Bring to Front</string>
+    <string name="browse">Browse</string>
+    <string name="builtin_wine">Builtin (Wine)</string>
+    <string name="cache" translatable="false">Cache</string>
+    <string name="cancel">Cancel</string>
+    <string name="capacity">Capacity</string>
+    <string name="capture_pointer_on_external_mouse">Capture pointer on external mouse</string>
+    <string name="channel">Channel</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="color">Color</string>
+    <string name="color_adjustment">Color Adjustment</string>
+    <string name="columns">Columns</string>
+    <string name="configuration">Configuration</string>
+    <string name="conservative">Conservative</string>
+    <string name="container">Container</string>
+    <string name="containers">Containers</string>
+    <string name="contains">Contains</string>
+    <string name="contrast">Contrast</string>
+    <string name="controls_editor">Controls Editor</string>
+    <string name="controls_profile">Controls Profile</string>
+    <string name="copy">Copy</string>
+    <string name="copying_files">Copying Files...</string>
+    <string name="creating_container">Creating Container...</string>
+    <string name="credits_and_third_party_apps">Credits and Third-party apps</string>
+    <string name="current">Current</string>
+    <string name="cursor_size">Cursor Size</string>
+    <string name="cursor_speed">Cursor Speed</string>
+    <string name="custom">Custom</string>
+    <string name="custom_device">Custom Device</string>
+    <string name="custom_text">Custom Text</string>
+    <string name="cut">Cut</string>
+    <string name="d3d_feature_level">D3D Feature Level</string>
+    <string name="dark">Dark</string>
+    <string name="ddraw_wrapper" translatable="false">DDraw Wrapper</string>
+    <string name="default_no_override">Default (No override)</string>
+    <string name="desktop">Desktop</string>
+    <string name="direct3d" translatable="false">Direct3D</string>
+    <string name="directinput" translatable="false">DirectInput</string>
+    <string name="directinput_mapper_type">DirectInput Mapper Type</string>
+    <string name="directmusic" translatable="false">DirectMusic</string>
+    <string name="directplay" translatable="false">DirectPlay</string>
+    <string name="directshow" translatable="false">DirectShow</string>
+    <string name="directsound" translatable="false">DirectSound</string>
+    <string name="directx" translatable="false">DirectX</string>
+    <string name="disable">Disable</string>
+    <string name="disable_mouse_input">Disable Mouse Input</string>
+    <string name="disable_vertex_array_bgra">Disable vertex array BGRA</string>
+    <string name="disabled">Disabled</string>
+    <string name="do_you_want_to_download_the_selected_profiles">Do you want to download the selected profiles?</string>
+    <string name="do_you_want_to_duplicate_this_container">Do you want to duplicate this container?</string>
+    <string name="do_you_want_to_duplicate_this_preset">Do you want to duplicate this preset?</string>
+    <string name="do_you_want_to_duplicate_this_profile">Do you want to duplicate this profile?</string>
+    <string name="do_you_want_to_end_this_process">Do you want to end this process?</string>
+    <string name="do_you_want_to_reinstall_system_files">Do you want to reinstall system files?</string>
+    <string name="do_you_want_to_remove_this_component_version">Do you want to remove this component version?</string>
+    <string name="do_you_want_to_remove_this_container">Do you want to remove this container?</string>
+    <string name="do_you_want_to_remove_this_controller">Do you want to remove this controller?</string>
+    <string name="do_you_want_to_remove_this_file">Do you want to remove this file?</string>
+    <string name="do_you_want_to_remove_this_preset">Do you want to remove this preset?</string>
+    <string name="do_you_want_to_remove_this_profile">Do you want to remove this profile?</string>
+    <string name="do_you_want_to_remove_this_wine_version">Do you want to remove this Wine version?</string>
+    <string name="do_you_want_to_reset_configurations">Do you want to reset the configurations?</string>
+    <string name="documents">Documents</string>
+    <string name="download_file">Download File</string>
+    <string name="downloading_file">Downloading File...</string>
+    <string name="downloads">Downloads</string>
+    <string name="dpi_font_size">DPI (Font Size)</string>
+    <string name="drive">Drive</string>
+    <string name="drive_c">Drive C:</string>
+    <string name="drives">Drives</string>
+    <string name="duplicate">Duplicate</string>
+    <string name="duplicating_container">Duplicating Container...</string>
+    <string name="dxwrapper" translatable="false">DX Wrapper</string>
+    <string name="dxwrapper_help_content"><![CDATA[
+        <i><b>WineD3D</b></i> is a translation layer for DirectX 1-11 to OpenGL.<br /><br />
+        <i><b>DXVK</b></i> is a translation layer for Direct3D 9-11 to Vulkan.<br /><br />
+        <i><b>VKD3D</b></i> is a translation layer for Direct3D 12 API to Vulkan.<br /><br />
+        <i><b>CNC DDraw</b></i> is an implementation of DirectDraw for better compatibility with classic games.
+    ]]></string>
+    <string name="edit">Edit</string>
+    <string name="edit_container">Edit Container</string>
+    <string name="enable">Enable</string>
+    <string name="enable_background_protection">Enable Background Protection</string>
+    <string name="enable_background_protection_tooltip">Keep container alive in background or when device locked, but processes\'re paused.</string>
+    <string name="enable_background_wakelock">Enable wakelock when the device is locked</string>
+    <string name="enable_background_wakelock_tooltip">Avoid issues when returning after unlocking the device.</string>
+    <string name="enable_crt_shader">Enable CRT Shader</string>
+    <string name="enable_csmt">Enable CSMT (Command Stream Multi-Thread)</string>
+    <string name="enable_direct_rendering">Enable direct rendering</string>
+    <string name="enable_fxaa">Enable FXAA</string>
+    <string name="enable_strict_shader_math">Enable Strict Shader Math</string>
+    <string name="enable_vibration">Enable Vibration</string>
+    <string name="enable_wine_debug">Enable Wine debug</string>
+    <string name="enabled">Enabled</string>
+    <string name="end_process">End Process</string>
+    <string name="environment_variables">Environment Variables</string>
+    <string name="estimated_used_space">Estimated Used Space</string>
+    <string name="exec_arguments" translatable="false">Exec Arguments</string>
+    <string name="exit">Exit</string>
+    <string name="export">Export</string>
+    <string name="export_profile">Export Profile</string>
+    <string name="exposed_extensions">Exposed Extensions</string>
+    <string name="external_controller">External Controller</string>
+    <string name="external_controllers">External Controllers</string>
+    <string name="favorites">Favorites</string>
+    <string name="fgs_notification_channel_desc">Keeps Winlator running in the background so a wine session is not interrupted by Android\'s background process management.</string>
+    <string name="fgs_notification_content_container_background">A container session is running in the background</string>
+    <string name="fgs_notification_content_container_foreground">There is a container session running</string>
+    <string name="fgs_notification_content_else">Winlator is running in the background</string>
+    <string name="file">File</string>
+    <string name="file_added_to_favorites">File added to Favorites</string>
+    <string name="file_manager">File Manager</string>
+    <string name="finishing_installation">Finishing installation...</string>
+    <string name="folder">Folder</string>
+    <string name="force">Force</string>
+    <string name="force_fullscreen">Force Fullscreen</string>
+    <string name="frame_rate">Frame Rate</string>
+    <string name="full">Full</string>
+    <string name="game_controllers">Game Controllers</string>
+    <string name="gamepad">Gamepad</string>
+    <string name="gamepad_model">Gamepad Model</string>
+    <string name="gamma">Gamma</string>
+    <string name="general">General</string>
+    <string name="gpu_name">GPU Name</string>
+    <string name="graphics_driver">Graphics Driver</string>
+    <string name="height">Height</string>
+    <string name="home">Home</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="hud_mode">HUD Mode</string>
+    <string name="icon">Icon</string>
+    <string name="image">Image</string>
+    <string name="image_cache_size">Image Cache Size</string>
+    <string name="import_profile">Import Profile</string>
+    <string name="information">Information</string>
+    <string name="input_controls">Input Controls</string>
+    <string name="install_component">Install Component</string>
+    <string name="install_wine">Install Wine</string>
+    <string name="installed_version">Installed Version</string>
+    <string name="installing_system_files">Installing System Files...</string>
+    <string name="instrument">Instrument</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="items">items</string>
+    <string name="keyboard">Keyboard</string>
+    <string name="language">Language</string>
+    <string name="letter">Letter</string>
+    <string name="light">Light</string>
+    <string name="loading">Loading...</string>
+    <string name="location">Location</string>
+    <string name="locations">Locations</string>
+    <string name="logs">Logs</string>
+    <string name="logs_exported_to">Logs exported to</string>
+    <string name="low_latency">Low Latency</string>
+    <string name="magnifier">Magnifier</string>
+    <string name="max_device_memory">Max Device Memory</string>
+    <string name="memory">Memory</string>
+    <string name="midi_input_device">MIDI Input Device</string>
+    <string name="midi_soundfont">MIDI SoundFont</string>
+    <string name="minimal">Minimal</string>
+    <string name="mode">Mode</string>
+    <string name="modified">Modified</string>
+    <string name="mouse">Mouse</string>
+    <string name="mouse_warp_override" translatable="false">Mouse Warp Override</string>
+    <string name="move_cursor_to_touchpoint">Move Cursor to Touchpoint</string>
+    <string name="move_mouse_when_pressed">Move Mouse when pressed</string>
+    <string name="multiselection_combobox_display_text">%d of %d items</string>
+    <string name="name">Name</string>
+    <string name="native_resolution">Native</string>
+    <string name="native_windows">Native (Windows)</string>
+    <string name="new_container">New Container</string>
+    <string name="new_environment_variable">New Environment Variable</string>
+    <string name="new_folder">New Folder</string>
+    <string name="new_task">New Task</string>
+    <string name="no_control_element_selected">No control element selected</string>
+    <string name="no_items_to_display">No items to display</string>
+    <string name="no_profile_found">No profile found</string>
+    <string name="no_profile_selected">No profile selected</string>
+    <string name="none">None</string>
+    <string name="note">Note</string>
+    <string name="offscreen_rendering_mode">Offscreen Rendering Mode</string>
+    <string name="ok">OK</string>
+    <string name="old">old</string>
+    <string name="opacity">Opacity</string>
+    <string name="open_android_browser_from_wine">Open Android Browser from Wine</string>
+    <string name="open_directory">Open Directory</string>
+    <string name="open_file">Open File</string>
+    <string name="opengl_version">OpenGL Version</string>
+    <string name="options">Options</string>
+    <string name="orientation">Orientation</string>
+    <string name="overlay_opacity">Overlay Opacity</string>
+    <string name="performance">Performance</string>
+    <string name="performance_mode">Performance Mode</string>
+    <string name="pid" translatable="false">PID</string>
+    <string name="pip_mode">PiP Mode</string>
+    <string name="player">Player</string>
+    <string name="power_saving">Power Saving</string>
+    <string name="preparing_installation">Preparing installation...</string>
+    <string name="present_mode">Present Mode</string>
+    <string name="preset">Preset</string>
+    <string name="press_any_button_on_your_controller">Press any button on your controller</string>
+    <string name="process_name">Process Name</string>
+    <string name="processes">Processes</string>
+    <string name="processor_affinity">Processor Affinity</string>
+    <string name="processor_affinity_32_bit_apps">Processor Affinity (32-bit apps)</string>
+    <string name="profile">Profile</string>
+    <string name="profile_exported_to">Profile exported to</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="range">Range</string>
+    <string name="reinstall_system_files">Reinstall System Files</string>
+    <string name="relative_mouse_movement">Relative Mouse Movement</string>
+    <string name="remove">Remove</string>
+    <string name="removing_container">Removing Container...</string>
+    <string name="removing_files">Removing Files...</string>
+    <string name="removing_wine">Removing Wine...</string>
+    <string name="rename">Rename</string>
+    <string name="renderer">Renderer</string>
+    <string name="reset">Reset</string>
+    <string name="resource_memory_type">Resource Memory Type</string>
+    <string name="run">Run</string>
+    <string name="save_logs_to_file">Save logs to file</string>
+    <string name="save_mem_on_run_from_steam">Save memory on run from Steam</string>
+    <string name="scale">Scale</string>
+    <string name="screen_effect">Screen Effect</string>
+    <string name="screen_size">Screen Size</string>
+    <string name="select_profile">Select Profile</string>
+    <string name="settings">Settings</string>
+    <string name="shape">Shape</string>
+    <string name="shortcuts">Shortcuts</string>
+    <string name="show_desktop">Show Desktop</string>
+    <string name="show_touchscreen_controls">Show Touchscreen Controls</string>
+    <string name="simple_fps">Simple (FPS)</string>
+    <string name="size">Size</string>
+    <string name="solid_color">Solid Color</string>
+    <string name="sound">Sound</string>
+    <string name="stability">Stability</string>
+    <string name="starting_up">Starting up...</string>
+    <string name="startup_selection">Startup Selection</string>
+    <string name="startup_selection_aggressive">Aggressive (Load minimal services)</string>
+    <string name="startup_selection_essential">Essential (Load only essential services)</string>
+    <string name="startup_selection_normal">Normal (Load all services)</string>
+    <string name="storage_info">Storage Info</string>
+    <string name="system">System</string>
+    <string name="system_font">System Font</string>
+    <string name="target_path">Target Path</string>
+    <string name="task_manager">Task Manager</string>
+    <string name="the_settings_have_been_changed_do_you_want_to_restart_the_app">The settings have been changed. Do you want to restart the app?</string>
+    <string name="theme">Theme</string>
+    <string name="there_already_file_with_that_name">There is already a file with that name</string>
+    <string name="there_are_no_items_to_download">There are no items to download</string>
+    <string name="toggle_fullscreen">Toggle Fullscreen</string>
+    <string name="toggle_switch">Toggle Switch</string>
+    <string name="total">Total</string>
+    <string name="touchpad_help">Touchpad Help</string>
+    <string name="touchpad_help_main_menu_description">Four fingers tap</string>
+    <string name="touchpad_help_main_menu_title">Main Menu</string>
+    <string name="touchpad_help_mouse_left_click_description">Short tap with one finger</string>
+    <string name="touchpad_help_mouse_left_click_title">Mouse Left-Click</string>
+    <string name="touchpad_help_mouse_right_click_description">Tap with one finger and short tap with another finger</string>
+    <string name="touchpad_help_mouse_right_click_title">Mouse Right-Click</string>
+    <string name="touchpad_help_mouse_scroll_wheel_description">Two fingers tap and move</string>
+    <string name="touchpad_help_mouse_scroll_wheel_title">Mouse Scroll Wheel</string>
+    <string name="trace">Trace</string>
+    <string name="type">Type</string>
+    <string name="unable_to_download_file">Unable to download file</string>
+    <string name="unable_to_import_profile">Unable to import profile</string>
+    <string name="unable_to_install_system_files">Unable to install system files</string>
+    <string name="unable_to_install_wine">Unable to install Wine</string>
+    <string name="unable_to_remove_this_wine_version">Unable to remove this Wine version</string>
+    <string name="untitled">Untitled</string>
+    <string name="updating_system_files">Updating System Files...</string>
+    <string name="use_android_clipboard_on_Wine">Use Android Clipboard on Wine</string>
+    <string name="value">Value</string>
+    <string name="vcrun2005" translatable="false">Visual C++ 2005</string>
+    <string name="vcrun2010" translatable="false">Visual C++ 2010</string>
+    <string name="version">Version</string>
+    <string name="vertical">Vertical</string>
+    <string name="video_memory_size">Video Memory Size</string>
+    <string name="view_style">View Style</string>
+    <string name="voltage">Voltage</string>
+    <string name="volume">Volume</string>
+    <string name="vulkan_version">Vulkan Version</string>
+    <string name="width">Width</string>
+    <string name="win_components" translatable="false">Win Components</string>
+    <string name="windows_version">Windows Version</string>
+    <string name="wine_configuration">Wine Configuration</string>
+    <string name="wine_debug_channel">Wine Debug Channel</string>
+    <string name="wine_version">Wine Version</string>
+    <string name="wmdecoder" translatable="false">Windows Media Decoder</string>
+    <string name="xaudio" translatable="false">XAudio</string>
+    <string name="you_cannot_paste_files_here">You cannot paste files here</string>
+    <string name="you_cannot_remove_this_component_version">You cannot remove this component version</string>
+    <string name="you_cannot_remove_this_preset">You cannot remove this preset</string>
+    <string name="zero_no_limit">0 (No limit)</string>
+    <style name="AppThemeBase" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="tabSelectedTextColor">?attr/colorPrimaryText</item>
+        <item name="tabTextColor">?attr/colorSecondaryText</item>
+        <item name="android:windowBackground">?attr/colorPrimarySurface</item>
+        <item name="android:colorBackground">?attr/colorPrimarySurface</item>
+        <item name="android:textViewStyle">@style/TextView</item>
+        <item name="android:checkboxStyle">@style/CheckBox</item>
+        <item name="android:listPopupWindowStyle">@style/ListPopupWindow</item>
+        <item name="listPopupWindowStyle">@style/ListPopupWindow</item>
+        <item name="android:popupWindowStyle">@style/PopupWindow</item>
+        <item name="popupWindowStyle">@style/PopupWindow</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:toolbarStyle">@style/Toolbar</item>
+        <item name="toolbarStyle">@style/Toolbar</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <item name="android:radioButtonStyle">@style/RadioButton</item>
+        <item name="radioButtonStyle">@style/RadioButton</item>
+    </style>
+    <style name="AppThemeDark" parent="@style/AppThemeBase">
+        <item name="colorAccent">#0288d1</item>
+        <item name="colorPrimary">#505963</item>
+        <item name="colorPrimaryDark">#3f474f</item>
+        <item name="colorControlNormal">#616161</item>
+        <item name="colorPrimaryText">#fafafa</item>
+        <item name="colorSecondaryText">#9e9e9e</item>
+        <item name="colorPrimarySurface">#1b1e21</item>
+        <item name="colorSecondarySurface">#2d3238</item>
+        <item name="colorPrimaryVariant">#56677a</item>
+        <item name="colorSecondaryVariant">#37424f</item>
+        <item name="colorError">#ef5350</item>
+        <item name="popupMenuBackground">@drawable/content_dialog_background_dark</item>
+        <item name="toolboxBackground">@drawable/toolbox_dark</item>
+        <item name="panelBackground">@drawable/panel_background_dark</item>
+        <item name="preloaderBackground">@drawable/preloader_background_dark</item>
+        <item name="progressBarIndeterminateImage">@drawable/progress_bar_indeterminate_dark</item>
+    </style>
+    <style name="AppThemeFullscreenDark" parent="@style/AppThemeDark">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <style name="AppThemeFullscreenLight" parent="@style/AppThemeLight">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <style name="AppThemeLight" parent="@style/AppThemeBase">
+        <item name="colorAccent">#0288d1</item>
+        <item name="colorPrimary">#607d8b</item>
+        <item name="colorPrimaryDark">#455a64</item>
+        <item name="colorControlNormal">#e0e0e0</item>
+        <item name="colorPrimaryText">#424242</item>
+        <item name="colorSecondaryText">#757575</item>
+        <item name="colorPrimarySurface">#fafafa</item>
+        <item name="colorSecondarySurface">#ffffff</item>
+        <item name="colorPrimaryVariant">#607d8b</item>
+        <item name="colorSecondaryVariant">#d3dce0</item>
+        <item name="colorError">#ef5350</item>
+        <item name="popupMenuBackground">@drawable/content_dialog_background_light</item>
+        <item name="toolboxBackground">@drawable/toolbox_light</item>
+        <item name="panelBackground">@drawable/panel_background_light</item>
+        <item name="preloaderBackground">@drawable/preloader_background_light</item>
+        <item name="progressBarIndeterminateImage">@drawable/progress_bar_indeterminate_light</item>
+    </style>
+    <style name="BaseButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="BaseImageButton">
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:padding">4dp</item>
+    </style>
+    <style name="ButtonNeutral" parent="BaseButton">
+        <item name="android:background">@drawable/button_neutral</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="ButtonPositive" parent="BaseButton">
+        <item name="android:background">@drawable/button_positive</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="CheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorPrimaryText</item>
+    </style>
+    <style name="ComboBox">
+        <item name="android:layout_width">192dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorPrimaryText</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">36dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:background">@drawable/combo_box</item>
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+    </style>
+    <style name="ContentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">?attr/popupMenuBackground</item>
+    </style>
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorPrimaryText</item>
+        <item name="android:textColorHint">?attr/colorSecondaryText</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:background">@drawable/edit_text</item>
+    </style>
+    <style name="FieldSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?attr/colorPrimaryVariant</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="FieldSet">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bordered_panel</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="FieldSetLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/colorPrimarySurface</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textColor">?attr/colorPrimaryVariant</item>
+    </style>
+    <style name="HelpButton">
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:src">@drawable/icon_help</item>
+        <item name="tint">#e0e0e0</item>
+    </style>
+    <style name="HorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">?attr/colorPrimaryVariant</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="LeftSideButton">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="tint">?attr/colorPrimaryVariant</item>
+        <item name="android:background">@drawable/left_side_button</item>
+        <item name="android:padding">6dp</item>
+    </style>
+    <style name="ListMenuButton" parent="BaseImageButton">
+        <item name="android:layout_width">34dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:tint">?attr/colorPrimaryVariant</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+    <style name="ListPopupWindow" parent="@android:style/Widget.ListPopupWindow">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+        <item name="android:dropDownHorizontalOffset">-4dp</item>
+    </style>
+    <style name="MultiSelectionComboBox">
+        <item name="android:layout_width">192dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorPrimaryText</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">36dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/combo_box</item>
+    </style>
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+    </style>
+    <style name="PopupWindow" parent="@android:style/Widget.PopupWindow">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+        <item name="android:dropDownHorizontalOffset">-4dp</item>
+    </style>
+    <style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorPrimaryText</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+    <style name="RightSideButton">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="tint">?attr/colorPrimaryVariant</item>
+        <item name="android:background">@drawable/right_side_button</item>
+        <item name="android:padding">6dp</item>
+    </style>
+    <style name="SpinnerDropDownItem" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">?attr/colorPrimaryText</item>
+    </style>
+    <style name="TableBodyRightLine">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?attr/colorControlNormal</item>
+    </style>
+    <style name="TableHead">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="TableHeadBottomLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#0278b8</item>
+    </style>
+    <style name="TableHeadRightLine">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#0278b8</item>
+    </style>
+    <style name="TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorPrimaryText</item>
+    </style>
+    <style name="TitleTextAppearance" parent="android:TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorPrimaryText</item>
+    </style>
+    <style name="ToolButton" parent="BaseImageButton">
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:tint">?attr/colorPrimaryVariant</item>
+    </style>
+    <style name="Toolbar" parent="@android:style/Widget.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="titleTextColor">#ffffff</item>
+        <item name="titleTextAppearance">@style/TitleTextAppearance</item>
+    </style>
+    <style name="Toolbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?attr/toolboxBackground</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+    <style name="VerticalLine">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?attr/colorPrimaryVariant</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+    <declare-styleable name="NumberPicker">
+        <attr name="value"/>
+        <attr name="minValue"/>
+        <attr name="maxValue"/>
+        <attr name="step"/>
+        <attr name="textSize"/>
+    </declare-styleable>
+    <declare-styleable name="SeekBar">
+        <attr name="value"/>
+        <attr name="minValue"/>
+        <attr name="maxValue"/>
+        <attr name="step"/>
+        <attr format="string" name="suffix"/>
+        <attr name="textSize"/>
+    </declare-styleable>
+</resources>

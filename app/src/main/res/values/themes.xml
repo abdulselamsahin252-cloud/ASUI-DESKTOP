@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ================================================================
+         ANA TEMA
+         ================================================================ -->
+    <style name="Theme.ASUIDesktop" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorPrimaryDark">@color/accent_blue_dark</item>
+        <item name="colorAccent">@color/accent_blue</item>
+        <item name="android:colorPrimary">@color/accent_blue</item>
+        <item name="android:colorPrimaryDark">@color/accent_blue_dark</item>
+        <item name="android:colorAccent">@color/accent_blue</item>
+        <item name="android:windowBackground">@color/desktop_background_light</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationStyle</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary_light</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowSplashScreenBackground">@color/black</item>
+    </style>
+
+    <!-- ================================================================
+         KOYU TEMA
+         ================================================================ -->
+    <style name="Theme.ASUIDesktop.Dark" parent="Theme.ASUIDesktop">
+        <item name="android:windowBackground">@color/desktop_background_dark</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorSecondary">@color/text_secondary_dark</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <!-- ================================================================
+         DİYALOG TEMASI
+         ================================================================ -->
+    <style name="Theme.ASUIDesktop.Dialog" parent="Theme.ASUIDesktop">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!-- ================================================================
+         AKSİYON ÇUBUĞU YOK
+         ================================================================ -->
+    <style name="Theme.ASUIDesktop.NoActionBar" parent="Theme.ASUIDesktop">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- ================================================================
+         PENCERE ANİMASYONLARI
+         ================================================================ -->
+    <style name="WindowAnimationStyle">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+        <item name="android:windowShowAnimation">@anim/fade_in</item>
+        <item name="android:windowHideAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>

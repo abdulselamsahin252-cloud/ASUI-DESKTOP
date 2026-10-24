@@ -1,0 +1,3 @@
+-keep class com.winlator.** { *; }
+-dontwarn com.winlator.**
+-dontobfuscate

@@ -1,0 +1,18 @@
+/usr/bin/cmake \
+  -H/WindowsUI/winlator/src/main/cpp \
+  -DCMAKE_SYSTEM_NAME=Android \
+  -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+  -DCMAKE_SYSTEM_VERSION=26 \
+  -DANDROID_PLATFORM=android-26 \
+  -DANDROID_ABI=arm64-v8a \
+  -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a \
+  -DANDROID_NDK=/root/android-ndk-r29 \
+  -DCMAKE_ANDROID_NDK=/root/android-ndk-r29 \
+  -DCMAKE_TOOLCHAIN_FILE=/root/android-ndk-r29/build/cmake/android.toolchain.cmake \
+  -DCMAKE_MAKE_PROGRAM=/usr/bin/ninja \
+  "-DCMAKE_C_FLAGS=-Wno-error=implicit-function-declaration -Wno-error=int-conversion -Wno-error=incompatible-function-pointer-types" \
+  -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/WindowsUI/winlator/build/intermediates/cxx/Debug/3e5n5i94/obj/arm64-v8a \
+  -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/WindowsUI/winlator/build/intermediates/cxx/Debug/3e5n5i94/obj/arm64-v8a \
+  -DCMAKE_BUILD_TYPE=Debug \
+  -B/WindowsUI/winlator/.cxx/Debug/3e5n5i94/arm64-v8a \
+  -GNinja

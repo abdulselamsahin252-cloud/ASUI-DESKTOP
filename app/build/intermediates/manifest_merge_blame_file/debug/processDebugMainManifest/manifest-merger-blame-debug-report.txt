@@ -1,0 +1,762 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.windowsui"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+9        android:targetSdkVersion="28" />
+10
+11    <!--
+12         ================================================================
+13         İZİNLER (PERMISSIONS)
+14         ================================================================
+15    -->
+16
+17
+18    <!-- Temel İzinler -->
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->/WindowsUI/app/src/main/AndroidManifest.xml:11:5-67
+19-->/WindowsUI/app/src/main/AndroidManifest.xml:11:22-64
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->/WindowsUI/app/src/main/AndroidManifest.xml:12:5-79
+20-->/WindowsUI/app/src/main/AndroidManifest.xml:12:22-76
+21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+21-->/WindowsUI/app/src/main/AndroidManifest.xml:13:5-76
+21-->/WindowsUI/app/src/main/AndroidManifest.xml:13:22-73
+22    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+22-->/WindowsUI/app/src/main/AndroidManifest.xml:14:5-76
+22-->/WindowsUI/app/src/main/AndroidManifest.xml:14:22-73
+23    <uses-permission android:name="android.permission.VIBRATE" />
+23-->/WindowsUI/app/src/main/AndroidManifest.xml:15:5-66
+23-->/WindowsUI/app/src/main/AndroidManifest.xml:15:22-63
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->/WindowsUI/app/src/main/AndroidManifest.xml:16:5-68
+24-->/WindowsUI/app/src/main/AndroidManifest.xml:16:22-65
+25    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+25-->/WindowsUI/app/src/main/AndroidManifest.xml:17:5-81
+25-->/WindowsUI/app/src/main/AndroidManifest.xml:17:22-78
+26    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+26-->/WindowsUI/app/src/main/AndroidManifest.xml:18:5-77
+26-->/WindowsUI/app/src/main/AndroidManifest.xml:18:22-74
+27    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+27-->/WindowsUI/app/src/main/AndroidManifest.xml:19:5-78
+27-->/WindowsUI/app/src/main/AndroidManifest.xml:19:22-75
+28    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+28-->/WindowsUI/app/src/main/AndroidManifest.xml:20:5-73
+28-->/WindowsUI/app/src/main/AndroidManifest.xml:20:22-70
+29    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+29-->/WindowsUI/app/src/main/AndroidManifest.xml:21:5-81
+29-->/WindowsUI/app/src/main/AndroidManifest.xml:21:22-78
+30    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+30-->/WindowsUI/app/src/main/AndroidManifest.xml:22:5-80
+30-->/WindowsUI/app/src/main/AndroidManifest.xml:22:22-77
+31    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+31-->/WindowsUI/app/src/main/AndroidManifest.xml:23:5-76
+31-->/WindowsUI/app/src/main/AndroidManifest.xml:23:22-73
+32    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+32-->/WindowsUI/app/src/main/AndroidManifest.xml:24:5-75
+32-->/WindowsUI/app/src/main/AndroidManifest.xml:24:22-72
+33    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+33-->/WindowsUI/app/src/main/AndroidManifest.xml:25:5-75
+33-->/WindowsUI/app/src/main/AndroidManifest.xml:25:22-72
+34
+35    <!-- Donanım İzinleri -->
+36    <uses-permission android:name="android.permission.CAMERA" />
+36-->/WindowsUI/app/src/main/AndroidManifest.xml:28:5-65
+36-->/WindowsUI/app/src/main/AndroidManifest.xml:28:22-62
+37    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+37-->/WindowsUI/app/src/main/AndroidManifest.xml:29:5-71
+37-->/WindowsUI/app/src/main/AndroidManifest.xml:29:22-68
+38    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+38-->/WindowsUI/app/src/main/AndroidManifest.xml:30:5-79
+38-->/WindowsUI/app/src/main/AndroidManifest.xml:30:22-76
+39    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+39-->/WindowsUI/app/src/main/AndroidManifest.xml:31:5-81
+39-->/WindowsUI/app/src/main/AndroidManifest.xml:31:22-78
+40    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+40-->/WindowsUI/app/src/main/AndroidManifest.xml:32:5-85
+40-->/WindowsUI/app/src/main/AndroidManifest.xml:32:22-82
+41    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+41-->/WindowsUI/app/src/main/AndroidManifest.xml:33:5-75
+41-->/WindowsUI/app/src/main/AndroidManifest.xml:33:22-72
+42    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+42-->/WindowsUI/app/src/main/AndroidManifest.xml:34:5-79
+42-->/WindowsUI/app/src/main/AndroidManifest.xml:34:22-76
+43    <uses-permission android:name="android.permission.BODY_SENSORS" />
+43-->/WindowsUI/app/src/main/AndroidManifest.xml:35:5-71
+43-->/WindowsUI/app/src/main/AndroidManifest.xml:35:22-68
+44    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+44-->/WindowsUI/app/src/main/AndroidManifest.xml:36:5-72
+44-->/WindowsUI/app/src/main/AndroidManifest.xml:36:22-69
+45    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+45-->/WindowsUI/app/src/main/AndroidManifest.xml:37:5-74
+45-->/WindowsUI/app/src/main/AndroidManifest.xml:37:22-71
+46
+47    <!-- Bluetooth İzinleri (Android 12+) -->
+48    <uses-permission android:name="android.permission.BLUETOOTH" />
+48-->/WindowsUI/app/src/main/AndroidManifest.xml:40:5-68
+48-->/WindowsUI/app/src/main/AndroidManifest.xml:40:22-65
+49    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+49-->/WindowsUI/app/src/main/AndroidManifest.xml:41:5-74
+49-->/WindowsUI/app/src/main/AndroidManifest.xml:41:22-71
+50    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+50-->/WindowsUI/app/src/main/AndroidManifest.xml:42:5-73
+50-->/WindowsUI/app/src/main/AndroidManifest.xml:42:22-70
+51    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+51-->/WindowsUI/app/src/main/AndroidManifest.xml:43:5-76
+51-->/WindowsUI/app/src/main/AndroidManifest.xml:43:22-73
+52
+53    <!-- Bildirim İzni (Android 13+) -->
+54    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+54-->/WindowsUI/app/src/main/AndroidManifest.xml:46:5-77
+54-->/WindowsUI/app/src/main/AndroidManifest.xml:46:22-74
+55
+56    <!-- USB OTG -->
+57    <uses-permission android:name="android.permission.USB_PERMISSION" />
+57-->/WindowsUI/app/src/main/AndroidManifest.xml:49:5-73
+57-->/WindowsUI/app/src/main/AndroidManifest.xml:49:22-70
+58
+59    <!-- Root/Shell İzinleri (sadece root cihazlarda) -->
+60    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+60-->/WindowsUI/app/src/main/AndroidManifest.xml:52:5-75
+60-->/WindowsUI/app/src/main/AndroidManifest.xml:52:22-72
+61
+62    <!--
+63         ================================================================
+64         UYGULAMA ÖZELLİKLERİ (FEATURES)
+65         ================================================================
+66    -->
+67
+68    <uses-feature
+68-->/WindowsUI/app/src/main/AndroidManifest.xml:58:5-60:36
+69        android:name="android.hardware.camera"
+69-->/WindowsUI/app/src/main/AndroidManifest.xml:59:9-47
+70        android:required="false" />
+70-->/WindowsUI/app/src/main/AndroidManifest.xml:60:9-33
+71    <uses-feature
+71-->/WindowsUI/app/src/main/AndroidManifest.xml:61:5-63:36
+72        android:name="android.hardware.camera.autofocus"
+72-->/WindowsUI/app/src/main/AndroidManifest.xml:62:9-57
+73        android:required="false" />
+73-->/WindowsUI/app/src/main/AndroidManifest.xml:63:9-33
+74    <uses-feature
+74-->/WindowsUI/app/src/main/AndroidManifest.xml:64:5-66:36
+75        android:name="android.hardware.location"
+75-->/WindowsUI/app/src/main/AndroidManifest.xml:65:9-49
+76        android:required="false" />
+76-->/WindowsUI/app/src/main/AndroidManifest.xml:66:9-33
+77    <uses-feature
+77-->/WindowsUI/app/src/main/AndroidManifest.xml:67:5-69:36
+78        android:name="android.hardware.location.gps"
+78-->/WindowsUI/app/src/main/AndroidManifest.xml:68:9-53
+79        android:required="false" />
+79-->/WindowsUI/app/src/main/AndroidManifest.xml:69:9-33
+80    <uses-feature
+80-->/WindowsUI/app/src/main/AndroidManifest.xml:70:5-72:36
+81        android:name="android.hardware.bluetooth"
+81-->/WindowsUI/app/src/main/AndroidManifest.xml:71:9-50
+82        android:required="false" />
+82-->/WindowsUI/app/src/main/AndroidManifest.xml:72:9-33
+83    <uses-feature
+83-->/WindowsUI/app/src/main/AndroidManifest.xml:73:5-75:36
+84        android:name="android.hardware.wifi"
+84-->/WindowsUI/app/src/main/AndroidManifest.xml:74:9-45
+85        android:required="false" />
+85-->/WindowsUI/app/src/main/AndroidManifest.xml:75:9-33
+86    <uses-feature
+86-->/WindowsUI/app/src/main/AndroidManifest.xml:76:5-78:36
+87        android:name="android.hardware.usb.host"
+87-->/WindowsUI/app/src/main/AndroidManifest.xml:77:9-49
+88        android:required="false" />
+88-->/WindowsUI/app/src/main/AndroidManifest.xml:78:9-33
+89    <uses-feature
+89-->/WindowsUI/app/src/main/AndroidManifest.xml:79:5-81:36
+90        android:name="android.hardware.sensor.accelerometer"
+90-->/WindowsUI/app/src/main/AndroidManifest.xml:80:9-61
+91        android:required="false" />
+91-->/WindowsUI/app/src/main/AndroidManifest.xml:81:9-33
+92    <uses-feature
+92-->/WindowsUI/app/src/main/AndroidManifest.xml:82:5-84:36
+93        android:name="android.hardware.sensor.gyroscope"
+93-->/WindowsUI/app/src/main/AndroidManifest.xml:83:9-57
+94        android:required="false" />
+94-->/WindowsUI/app/src/main/AndroidManifest.xml:84:9-33
+95    <uses-feature
+95-->/WindowsUI/app/src/main/AndroidManifest.xml:85:5-87:36
+96        android:name="android.hardware.sensor.light"
+96-->/WindowsUI/app/src/main/AndroidManifest.xml:86:9-53
+97        android:required="false" />
+97-->/WindowsUI/app/src/main/AndroidManifest.xml:87:9-33
+98    <uses-feature
+98-->/WindowsUI/app/src/main/AndroidManifest.xml:88:5-90:36
+99        android:name="android.hardware.sensor.proximity"
+99-->/WindowsUI/app/src/main/AndroidManifest.xml:89:9-57
+100        android:required="false" />
+100-->/WindowsUI/app/src/main/AndroidManifest.xml:90:9-33
+101
+102    <!-- Biyometrik donanım -->
+103    <uses-feature
+103-->/WindowsUI/app/src/main/AndroidManifest.xml:93:5-95:36
+104        android:name="android.hardware.biometric.face"
+104-->/WindowsUI/app/src/main/AndroidManifest.xml:94:9-55
+105        android:required="false" />
+105-->/WindowsUI/app/src/main/AndroidManifest.xml:95:9-33
+106    <uses-feature
+106-->/WindowsUI/app/src/main/AndroidManifest.xml:96:5-98:36
+107        android:name="android.hardware.biometric.fingerprint"
+107-->/WindowsUI/app/src/main/AndroidManifest.xml:97:9-62
+108        android:required="false" />
+108-->/WindowsUI/app/src/main/AndroidManifest.xml:98:9-33
+109    <uses-feature
+109-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-9:35
+110        android:glEsVersion="0x00020000"
+110-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-41
+111        android:required="true" />
+111-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:9-32
+112
+113    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+113-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:5-80
+113-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:22-77
+114    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+114-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:20:5-92
+114-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:20:22-89
+115
+116    <permission
+116-->[androidx.core:core:1.15.0] /root/.gradle/caches/8.10/transforms/1eabb0a937aca435051340f9c812f565/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+117        android:name="com.windowsui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+117-->[androidx.core:core:1.15.0] /root/.gradle/caches/8.10/transforms/1eabb0a937aca435051340f9c812f565/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+118        android:protectionLevel="signature" />
+118-->[androidx.core:core:1.15.0] /root/.gradle/caches/8.10/transforms/1eabb0a937aca435051340f9c812f565/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+119
+120    <uses-permission android:name="com.windowsui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+120-->[androidx.core:core:1.15.0] /root/.gradle/caches/8.10/transforms/1eabb0a937aca435051340f9c812f565/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+120-->[androidx.core:core:1.15.0] /root/.gradle/caches/8.10/transforms/1eabb0a937aca435051340f9c812f565/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+121    <!--
+122 ================================================================
+123         UYGULAMA YAPILANDIRMASI
+124         ================================================================
+125    -->
+126    <application
+126-->/WindowsUI/app/src/main/AndroidManifest.xml:104:5-184:19
+127        android:name="com.windowsui.ASUIApplication"
+127-->/WindowsUI/app/src/main/AndroidManifest.xml:105:9-40
+128        android:allowBackup="true"
+128-->/WindowsUI/app/src/main/AndroidManifest.xml:106:9-35
+129        android:allowClearUserData="true"
+129-->/WindowsUI/app/src/main/AndroidManifest.xml:107:9-42
+130        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+130-->[androidx.core:core:1.15.0] /root/.gradle/caches/8.10/transforms/1eabb0a937aca435051340f9c812f565/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+131        android:debuggable="true"
+132        android:extractNativeLibs="true"
+133        android:hardwareAccelerated="true"
+133-->/WindowsUI/app/src/main/AndroidManifest.xml:115:9-43
+134        android:icon="@mipmap/ic_launcher"
+134-->/WindowsUI/app/src/main/AndroidManifest.xml:108:9-43
+135        android:label="@string/app_name"
+135-->/WindowsUI/app/src/main/AndroidManifest.xml:109:9-41
+136        android:largeHeap="true"
+136-->/WindowsUI/app/src/main/AndroidManifest.xml:116:9-33
+137        android:requestLegacyExternalStorage="true"
+137-->/WindowsUI/app/src/main/AndroidManifest.xml:110:9-52
+138        android:resizeableActivity="true"
+138-->/WindowsUI/app/src/main/AndroidManifest.xml:111:9-42
+139        android:supportsRtl="true"
+139-->/WindowsUI/app/src/main/AndroidManifest.xml:112:9-35
+140        android:theme="@style/Theme.ASUIDesktop"
+140-->/WindowsUI/app/src/main/AndroidManifest.xml:113:9-49
+141        android:usesCleartextTraffic="true" >
+141-->/WindowsUI/app/src/main/AndroidManifest.xml:114:9-44
+142
+143        <!--
+144             ============================================================
+145             ANA AKTİVİTE (LAUNCHER)
+146             ============================================================
+147        -->
+148        <activity
+148-->/WindowsUI/app/src/main/AndroidManifest.xml:122:9-135:20
+149            android:name="com.windowsui.MainActivity"
+149-->/WindowsUI/app/src/main/AndroidManifest.xml:123:13-41
+150            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|locale|layoutDirection|density"
+150-->/WindowsUI/app/src/main/AndroidManifest.xml:124:13-114
+151            android:exported="true"
+151-->/WindowsUI/app/src/main/AndroidManifest.xml:125:13-36
+152            android:launchMode="singleTop"
+152-->/WindowsUI/app/src/main/AndroidManifest.xml:126:13-43
+153            android:screenOrientation="fullSensor"
+153-->/WindowsUI/app/src/main/AndroidManifest.xml:127:13-51
+154            android:theme="@style/Theme.ASUIDesktop.NoActionBar" >
+154-->/WindowsUI/app/src/main/AndroidManifest.xml:128:13-65
+155            <intent-filter>
+155-->/WindowsUI/app/src/main/AndroidManifest.xml:129:13-134:29
+156                <action android:name="android.intent.action.MAIN" />
+156-->/WindowsUI/app/src/main/AndroidManifest.xml:130:17-69
+156-->/WindowsUI/app/src/main/AndroidManifest.xml:130:25-66
+157
+158                <category android:name="android.intent.category.LAUNCHER" />
+158-->/WindowsUI/app/src/main/AndroidManifest.xml:131:17-77
+158-->/WindowsUI/app/src/main/AndroidManifest.xml:131:27-74
+159                <category android:name="android.intent.category.HOME" />
+159-->/WindowsUI/app/src/main/AndroidManifest.xml:132:17-73
+159-->/WindowsUI/app/src/main/AndroidManifest.xml:132:27-70
+160                <category android:name="android.intent.category.DEFAULT" />
+160-->/WindowsUI/app/src/main/AndroidManifest.xml:133:17-76
+160-->/WindowsUI/app/src/main/AndroidManifest.xml:133:27-73
+161            </intent-filter>
+162        </activity>
+163
+164        <!--
+165             ============================================================
+166             BİLDİRİM SERVİSİ (NotificationListenerService)
+167             ============================================================
+168        -->
+169        <service
+169-->/WindowsUI/app/src/main/AndroidManifest.xml:140:9-147:19
+170            android:name="com.windowsui.WindowsNotificationService"
+170-->/WindowsUI/app/src/main/AndroidManifest.xml:141:13-55
+171            android:exported="true"
+171-->/WindowsUI/app/src/main/AndroidManifest.xml:142:13-36
+172            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+172-->/WindowsUI/app/src/main/AndroidManifest.xml:143:13-87
+173            <intent-filter>
+173-->/WindowsUI/app/src/main/AndroidManifest.xml:144:13-146:29
+174                <action android:name="android.service.notification.NotificationListenerService" />
+174-->/WindowsUI/app/src/main/AndroidManifest.xml:145:17-99
+174-->/WindowsUI/app/src/main/AndroidManifest.xml:145:25-96
+175            </intent-filter>
+176        </service>
+177
+178        <!--
+179             ============================================================
+180             ERIŞILEBILIRLIK SERVISI (AccessibilityService)
+181             ============================================================
+182        -->
+183        <service
+183-->/WindowsUI/app/src/main/AndroidManifest.xml:152:9-162:19
+184            android:name="com.windowsui.WindowsAccessibilityService"
+184-->/WindowsUI/app/src/main/AndroidManifest.xml:153:13-56
+185            android:exported="true"
+185-->/WindowsUI/app/src/main/AndroidManifest.xml:154:13-36
+186            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+186-->/WindowsUI/app/src/main/AndroidManifest.xml:155:13-79
+187            <intent-filter>
+187-->/WindowsUI/app/src/main/AndroidManifest.xml:156:13-158:29
+188                <action android:name="android.accessibilityservice.AccessibilityService" />
+188-->/WindowsUI/app/src/main/AndroidManifest.xml:157:17-92
+188-->/WindowsUI/app/src/main/AndroidManifest.xml:157:25-89
+189            </intent-filter>
+190
+191            <meta-data
+191-->/WindowsUI/app/src/main/AndroidManifest.xml:159:13-161:72
+192                android:name="android.accessibilityservice"
+192-->/WindowsUI/app/src/main/AndroidManifest.xml:160:17-60
+193                android:resource="@xml/accessibility_service_config" />
+193-->/WindowsUI/app/src/main/AndroidManifest.xml:161:17-69
+194        </service>
+195
+196        <!--
+197             ============================================================
+198             DOSYA SAĞLAYICI (FileProvider)
+199             ============================================================
+200        -->
+201        <provider
+202            android:name="androidx.core.content.FileProvider"
+202-->/WindowsUI/app/src/main/AndroidManifest.xml:168:13-62
+203            android:authorities="com.windowsui.fileprovider"
+203-->/WindowsUI/app/src/main/AndroidManifest.xml:169:13-64
+204            android:exported="false"
+204-->/WindowsUI/app/src/main/AndroidManifest.xml:170:13-37
+205            android:grantUriPermissions="true" >
+205-->/WindowsUI/app/src/main/AndroidManifest.xml:171:13-47
+206            <meta-data
+206-->/WindowsUI/app/src/main/AndroidManifest.xml:172:13-174:58
+207                android:name="android.support.FILE_PROVIDER_PATHS"
+207-->/WindowsUI/app/src/main/AndroidManifest.xml:173:17-67
+208                android:resource="@xml/provider_paths" />
+208-->/WindowsUI/app/src/main/AndroidManifest.xml:174:17-55
+209        </provider>
+210
+211        <!--
+212             ============================================================
+213             ANDROID 13+ BİLDİRİM İZNİ
+214             ============================================================
+215        -->
+216        <meta-data
+216-->/WindowsUI/app/src/main/AndroidManifest.xml:180:9-182:39
+217            android:name="androidx.core.app.NotificationManagerCompat"
+217-->/WindowsUI/app/src/main/AndroidManifest.xml:181:13-71
+218            android:value="enabled" />
+218-->/WindowsUI/app/src/main/AndroidManifest.xml:182:13-36
+219
+220        <!-- Launcher intent-filter bilerek yok: ASUI tek giris noktasi. -->
+221        <activity
+221-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:26:9-31:51
+222            android:name="com.winlator.MainActivity"
+222-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:13-53
+223            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|density|navigation"
+223-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:13-134
+224            android:exported="false"
+224-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:29:13-37
+225            android:screenOrientation="sensor"
+225-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:30:13-47
+226            android:theme="@style/AppThemeDark" />
+226-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:31:13-48
+227        <activity
+227-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:32:9-39:61
+228            android:name="com.winlator.XServerDisplayActivity"
+228-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:33:13-63
+229            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|density|navigation"
+229-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:34:13-134
+230            android:exported="false"
+230-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:35:13-37
+231            android:launchMode="singleTask"
+231-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:36:13-44
+232            android:screenOrientation="sensorLandscape"
+232-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:37:13-56
+233            android:supportsPictureInPicture="true"
+233-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:38:13-52
+234            android:theme="@style/AppThemeFullscreenDark" />
+234-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:39:13-58
+235        <activity
+235-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:40:9-44:61
+236            android:name="com.winlator.ControlsEditorActivity"
+236-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:41:13-63
+237            android:exported="false"
+237-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:42:13-37
+238            android:screenOrientation="sensorLandscape"
+238-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:43:13-56
+239            android:theme="@style/AppThemeFullscreenDark" />
+239-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:44:13-58
+240        <activity
+240-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:45:9-49:51
+241            android:name="com.winlator.ExternalControllerBindingsActivity"
+241-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:46:13-75
+242            android:exported="false"
+242-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:47:13-37
+243            android:screenOrientation="sensor"
+243-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:48:13-47
+244            android:theme="@style/AppThemeDark" />
+244-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:49:13-48
+245
+246        <service
+246-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:51:9-56:44
+247            android:name="com.winlator.services.ForegroundService"
+247-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:52:13-67
+248            android:enabled="true"
+248-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:53:13-35
+249            android:exported="false"
+249-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:54:13-37
+250            android:foregroundServiceType="mediaPlayback"
+250-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:55:13-58
+251            android:stopWithTask="false" />
+251-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:56:13-41
+252
+253        <provider
+253-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:58:9-66:20
+254            android:name="com.winlator.AsuiFileProvider"
+254-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:59:13-57
+255            android:authorities="com.winlator.FileProvider"
+255-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:60:13-60
+256            android:exported="false"
+256-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:61:13-37
+257            android:grantUriPermissions="true" >
+257-->[:winlator] /WindowsUI/winlator/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:62:13-47
+258            <meta-data
+258-->/WindowsUI/app/src/main/AndroidManifest.xml:172:13-174:58
+259                android:name="android.support.FILE_PROVIDER_PATHS"
+259-->/WindowsUI/app/src/main/AndroidManifest.xml:173:17-67
+260                android:resource="@xml/file_paths" />
+260-->/WindowsUI/app/src/main/AndroidManifest.xml:174:17-55
+261        </provider>
+262
+263        <activity
+263-->[androidx.compose.ui:ui-tooling-android:1.7.4] /root/.gradle/caches/8.10/transforms/82c749e59a3eab27075394043ca43cd7/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+264            android:name="androidx.compose.ui.tooling.PreviewActivity"
+264-->[androidx.compose.ui:ui-tooling-android:1.7.4] /root/.gradle/caches/8.10/transforms/82c749e59a3eab27075394043ca43cd7/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+265            android:exported="true" />
+265-->[androidx.compose.ui:ui-tooling-android:1.7.4] /root/.gradle/caches/8.10/transforms/82c749e59a3eab27075394043ca43cd7/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+266
+267        <provider
+267-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/8.10/transforms/cf2b948eef0230185cbdf9bef0c14b5e/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+268            android:name="androidx.startup.InitializationProvider"
+268-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/8.10/transforms/cf2b948eef0230185cbdf9bef0c14b5e/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+269            android:authorities="com.windowsui.androidx-startup"
+269-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/8.10/transforms/cf2b948eef0230185cbdf9bef0c14b5e/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+270            android:exported="false" >
+270-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/8.10/transforms/cf2b948eef0230185cbdf9bef0c14b5e/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+271            <meta-data
+271-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/8.10/transforms/cf2b948eef0230185cbdf9bef0c14b5e/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+272                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+272-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/8.10/transforms/cf2b948eef0230185cbdf9bef0c14b5e/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+273                android:value="androidx.startup" />
+273-->[androidx.emoji2:emoji2:1.3.0] /root/.gradle/caches/8.10/transforms/cf2b948eef0230185cbdf9bef0c14b5e/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+274            <meta-data
+274-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:34:13-36:52
+275                android:name="androidx.work.WorkManagerInitializer"
+275-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:35:17-68
+276                android:value="androidx.startup" />
+276-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:36:17-49
+277            <meta-data
+277-->[androidx.lifecycle:lifecycle-process:2.8.3] /root/.gradle/caches/8.10/transforms/f87e26c965e21fbc17dcbac56d014303/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:29:13-31:52
+278                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+278-->[androidx.lifecycle:lifecycle-process:2.8.3] /root/.gradle/caches/8.10/transforms/f87e26c965e21fbc17dcbac56d014303/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:30:17-78
+279                android:value="androidx.startup" />
+279-->[androidx.lifecycle:lifecycle-process:2.8.3] /root/.gradle/caches/8.10/transforms/f87e26c965e21fbc17dcbac56d014303/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:31:17-49
+280            <meta-data
+280-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+281                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+281-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+282                android:value="androidx.startup" />
+282-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+283        </provider>
+284
+285        <service
+285-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:39:9-45:35
+286            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+286-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:40:13-88
+287            android:directBootAware="false"
+287-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:41:13-44
+288            android:enabled="@bool/enable_system_alarm_service_default"
+288-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:42:13-72
+289            android:exported="false" />
+289-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:43:13-37
+290        <service
+290-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:46:9-52:35
+291            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+291-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:47:13-84
+292            android:directBootAware="false"
+292-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:48:13-44
+293            android:enabled="@bool/enable_system_job_service_default"
+293-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:49:13-70
+294            android:exported="true"
+294-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:50:13-36
+295            android:permission="android.permission.BIND_JOB_SERVICE" />
+295-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:51:13-69
+296        <service
+296-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:53:9-59:35
+297            android:name="androidx.work.impl.foreground.SystemForegroundService"
+297-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:54:13-81
+298            android:directBootAware="false"
+298-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:55:13-44
+299            android:enabled="@bool/enable_system_foreground_service_default"
+299-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:56:13-77
+300            android:exported="false" />
+300-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:57:13-37
+301
+302        <receiver
+302-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:61:9-66:35
+303            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+303-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:62:13-88
+304            android:directBootAware="false"
+304-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:63:13-44
+305            android:enabled="true"
+305-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:64:13-35
+306            android:exported="false" />
+306-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:65:13-37
+307        <receiver
+307-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:67:9-77:20
+308            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+308-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:68:13-106
+309            android:directBootAware="false"
+309-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:69:13-44
+310            android:enabled="false"
+310-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:70:13-36
+311            android:exported="false" >
+311-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:71:13-37
+312            <intent-filter>
+312-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:73:13-76:29
+313                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+313-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:17-87
+313-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:25-84
+314                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+314-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:17-90
+314-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:25-87
+315            </intent-filter>
+316        </receiver>
+317        <receiver
+317-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:78:9-88:20
+318            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+318-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:79:13-104
+319            android:directBootAware="false"
+319-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:80:13-44
+320            android:enabled="false"
+320-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:81:13-36
+321            android:exported="false" >
+321-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:82:13-37
+322            <intent-filter>
+322-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:84:13-87:29
+323                <action android:name="android.intent.action.BATTERY_OKAY" />
+323-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:17-77
+323-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:25-74
+324                <action android:name="android.intent.action.BATTERY_LOW" />
+324-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:17-76
+324-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:25-73
+325            </intent-filter>
+326        </receiver>
+327        <receiver
+327-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:89:9-99:20
+328            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+328-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:90:13-104
+329            android:directBootAware="false"
+329-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:91:13-44
+330            android:enabled="false"
+330-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:92:13-36
+331            android:exported="false" >
+331-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:93:13-37
+332            <intent-filter>
+332-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:95:13-98:29
+333                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+333-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:17-83
+333-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:25-80
+334                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+334-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:17-82
+334-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:25-79
+335            </intent-filter>
+336        </receiver>
+337        <receiver
+337-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:100:9-109:20
+338            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+338-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:101:13-103
+339            android:directBootAware="false"
+339-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:102:13-44
+340            android:enabled="false"
+340-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:103:13-36
+341            android:exported="false" >
+341-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:104:13-37
+342            <intent-filter>
+342-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:106:13-108:29
+343                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+343-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:17-79
+343-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:25-76
+344            </intent-filter>
+345        </receiver>
+346        <receiver
+346-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:110:9-121:20
+347            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+347-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:111:13-88
+348            android:directBootAware="false"
+348-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:112:13-44
+349            android:enabled="false"
+349-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:113:13-36
+350            android:exported="false" >
+350-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:114:13-37
+351            <intent-filter>
+351-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:116:13-120:29
+352                <action android:name="android.intent.action.BOOT_COMPLETED" />
+352-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:117:17-79
+352-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:117:25-76
+353                <action android:name="android.intent.action.TIME_SET" />
+353-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:17-73
+353-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:25-70
+354                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+354-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:17-81
+354-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:25-78
+355            </intent-filter>
+356        </receiver>
+357        <receiver
+357-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:122:9-131:20
+358            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+358-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:123:13-99
+359            android:directBootAware="false"
+359-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:124:13-44
+360            android:enabled="@bool/enable_system_alarm_service_default"
+360-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:125:13-72
+361            android:exported="false" >
+361-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:126:13-37
+362            <intent-filter>
+362-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:128:13-130:29
+363                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+363-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:17-98
+363-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:25-95
+364            </intent-filter>
+365        </receiver>
+366        <receiver
+366-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:132:9-142:20
+367            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+367-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:133:13-78
+368            android:directBootAware="false"
+368-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:134:13-44
+369            android:enabled="true"
+369-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:135:13-35
+370            android:exported="true"
+370-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:136:13-36
+371            android:permission="android.permission.DUMP" >
+371-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:137:13-57
+372            <intent-filter>
+372-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:139:13-141:29
+373                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+373-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:17-88
+373-->[androidx.work:work-runtime:2.9.1] /root/.gradle/caches/8.10/transforms/97b2bfbbe1982e63cea78c1671307c01/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:25-85
+374            </intent-filter>
+375        </receiver>
+376
+377        <uses-library
+377-->[androidx.window:window:1.0.0] /root/.gradle/caches/8.10/transforms/f1e8f5132d06196a62a29118a2f199d9/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+378            android:name="androidx.window.extensions"
+378-->[androidx.window:window:1.0.0] /root/.gradle/caches/8.10/transforms/f1e8f5132d06196a62a29118a2f199d9/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+379            android:required="false" />
+379-->[androidx.window:window:1.0.0] /root/.gradle/caches/8.10/transforms/f1e8f5132d06196a62a29118a2f199d9/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+380        <uses-library
+380-->[androidx.window:window:1.0.0] /root/.gradle/caches/8.10/transforms/f1e8f5132d06196a62a29118a2f199d9/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+381            android:name="androidx.window.sidecar"
+381-->[androidx.window:window:1.0.0] /root/.gradle/caches/8.10/transforms/f1e8f5132d06196a62a29118a2f199d9/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+382            android:required="false" />
+382-->[androidx.window:window:1.0.0] /root/.gradle/caches/8.10/transforms/f1e8f5132d06196a62a29118a2f199d9/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+383
+384        <activity
+384-->[androidx.compose.ui:ui-test-manifest:1.7.4] /root/.gradle/caches/8.10/transforms/4861d08f594d2b2ee3856c40fce4b46d/transformed/ui-test-manifest-1.7.4/AndroidManifest.xml:23:9-25:39
+385            android:name="androidx.activity.ComponentActivity"
+385-->[androidx.compose.ui:ui-test-manifest:1.7.4] /root/.gradle/caches/8.10/transforms/4861d08f594d2b2ee3856c40fce4b46d/transformed/ui-test-manifest-1.7.4/AndroidManifest.xml:24:13-63
+386            android:exported="true" />
+386-->[androidx.compose.ui:ui-test-manifest:1.7.4] /root/.gradle/caches/8.10/transforms/4861d08f594d2b2ee3856c40fce4b46d/transformed/ui-test-manifest-1.7.4/AndroidManifest.xml:25:13-36
+387
+388        <receiver
+388-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+389            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+389-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+390            android:directBootAware="false"
+390-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+391            android:enabled="true"
+391-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+392            android:exported="true"
+392-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+393            android:permission="android.permission.DUMP" >
+393-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+394            <intent-filter>
+394-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+395                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+395-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+395-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+396            </intent-filter>
+397            <intent-filter>
+397-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+398                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+398-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+398-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+399            </intent-filter>
+400            <intent-filter>
+400-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+401                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+401-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+401-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+402            </intent-filter>
+403            <intent-filter>
+403-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+404                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+404-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+404-->[androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/caches/8.10/transforms/7d6297eef2b7fb042d79b62e6f1f4b91/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+405            </intent-filter>
+406        </receiver>
+407
+408        <service
+408-->[androidx.room:room-runtime:2.5.0] /root/.gradle/caches/8.10/transforms/240572374c964dcbb821207244189d8f/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+409            android:name="androidx.room.MultiInstanceInvalidationService"
+409-->[androidx.room:room-runtime:2.5.0] /root/.gradle/caches/8.10/transforms/240572374c964dcbb821207244189d8f/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+410            android:directBootAware="true"
+410-->[androidx.room:room-runtime:2.5.0] /root/.gradle/caches/8.10/transforms/240572374c964dcbb821207244189d8f/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+411            android:exported="false" />
+411-->[androidx.room:room-runtime:2.5.0] /root/.gradle/caches/8.10/transforms/240572374c964dcbb821207244189d8f/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+412    </application>
+413
+414</manifest>

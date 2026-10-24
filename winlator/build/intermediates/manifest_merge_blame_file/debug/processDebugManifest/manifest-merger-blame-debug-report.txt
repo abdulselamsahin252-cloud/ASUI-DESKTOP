@@ -1,0 +1,133 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.winlator" >
+4
+5    <uses-sdk android:minSdkVersion="26" />
+6
+7    <uses-feature
+7-->/WindowsUI/winlator/src/main/AndroidManifest.xml:3:5-5:35
+8        android:glEsVersion="0x00020000"
+8-->/WindowsUI/winlator/src/main/AndroidManifest.xml:4:9-41
+9        android:required="true" />
+9-->/WindowsUI/winlator/src/main/AndroidManifest.xml:5:9-32
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/WindowsUI/winlator/src/main/AndroidManifest.xml:7:5-66
+11-->/WindowsUI/winlator/src/main/AndroidManifest.xml:7:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/WindowsUI/winlator/src/main/AndroidManifest.xml:8:5-78
+12-->/WindowsUI/winlator/src/main/AndroidManifest.xml:8:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->/WindowsUI/winlator/src/main/AndroidManifest.xml:9:5-75
+13-->/WindowsUI/winlator/src/main/AndroidManifest.xml:9:22-73
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/WindowsUI/winlator/src/main/AndroidManifest.xml:10:5-80
+14-->/WindowsUI/winlator/src/main/AndroidManifest.xml:10:22-78
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/WindowsUI/winlator/src/main/AndroidManifest.xml:11:5-79
+15-->/WindowsUI/winlator/src/main/AndroidManifest.xml:11:22-77
+16    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+16-->/WindowsUI/winlator/src/main/AndroidManifest.xml:12:5-79
+16-->/WindowsUI/winlator/src/main/AndroidManifest.xml:12:22-77
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->/WindowsUI/winlator/src/main/AndroidManifest.xml:13:5-65
+17-->/WindowsUI/winlator/src/main/AndroidManifest.xml:13:22-63
+18    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+18-->/WindowsUI/winlator/src/main/AndroidManifest.xml:14:5-76
+18-->/WindowsUI/winlator/src/main/AndroidManifest.xml:14:22-74
+19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+19-->/WindowsUI/winlator/src/main/AndroidManifest.xml:15:5-77
+19-->/WindowsUI/winlator/src/main/AndroidManifest.xml:15:22-74
+20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+20-->/WindowsUI/winlator/src/main/AndroidManifest.xml:16:5-92
+20-->/WindowsUI/winlator/src/main/AndroidManifest.xml:16:22-89
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->/WindowsUI/winlator/src/main/AndroidManifest.xml:17:5-68
+21-->/WindowsUI/winlator/src/main/AndroidManifest.xml:17:22-65
+22
+23    <application>
+23-->/WindowsUI/winlator/src/main/AndroidManifest.xml:19:5-61:19
+24
+25        <!-- Launcher intent-filter bilerek yok: ASUI tek giris noktasi. -->
+26        <activity
+26-->/WindowsUI/winlator/src/main/AndroidManifest.xml:21:9-25:137
+27            android:name="com.winlator.MainActivity"
+27-->/WindowsUI/winlator/src/main/AndroidManifest.xml:21:19-59
+28            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|density|navigation"
+28-->/WindowsUI/winlator/src/main/AndroidManifest.xml:25:13-134
+29            android:exported="false"
+29-->/WindowsUI/winlator/src/main/AndroidManifest.xml:23:13-37
+30            android:screenOrientation="sensor"
+30-->/WindowsUI/winlator/src/main/AndroidManifest.xml:24:13-47
+31            android:theme="@style/AppThemeDark" />
+31-->/WindowsUI/winlator/src/main/AndroidManifest.xml:22:13-48
+32        <activity
+32-->/WindowsUI/winlator/src/main/AndroidManifest.xml:27:9-33:59
+33            android:name="com.winlator.XServerDisplayActivity"
+33-->/WindowsUI/winlator/src/main/AndroidManifest.xml:27:19-69
+34            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|density|navigation"
+34-->/WindowsUI/winlator/src/main/AndroidManifest.xml:32:13-134
+35            android:exported="false"
+35-->/WindowsUI/winlator/src/main/AndroidManifest.xml:28:13-37
+36            android:launchMode="singleTask"
+36-->/WindowsUI/winlator/src/main/AndroidManifest.xml:31:13-44
+37            android:screenOrientation="sensorLandscape"
+37-->/WindowsUI/winlator/src/main/AndroidManifest.xml:33:13-56
+38            android:supportsPictureInPicture="true"
+38-->/WindowsUI/winlator/src/main/AndroidManifest.xml:30:13-52
+39            android:theme="@style/AppThemeFullscreenDark" />
+39-->/WindowsUI/winlator/src/main/AndroidManifest.xml:29:13-58
+40        <activity
+40-->/WindowsUI/winlator/src/main/AndroidManifest.xml:35:9-38:59
+41            android:name="com.winlator.ControlsEditorActivity"
+41-->/WindowsUI/winlator/src/main/AndroidManifest.xml:35:19-69
+42            android:exported="false"
+42-->/WindowsUI/winlator/src/main/AndroidManifest.xml:36:13-37
+43            android:screenOrientation="sensorLandscape"
+43-->/WindowsUI/winlator/src/main/AndroidManifest.xml:38:13-56
+44            android:theme="@style/AppThemeFullscreenDark" />
+44-->/WindowsUI/winlator/src/main/AndroidManifest.xml:37:13-58
+45        <activity
+45-->/WindowsUI/winlator/src/main/AndroidManifest.xml:40:9-43:50
+46            android:name="com.winlator.ExternalControllerBindingsActivity"
+46-->/WindowsUI/winlator/src/main/AndroidManifest.xml:40:19-81
+47            android:exported="false"
+47-->/WindowsUI/winlator/src/main/AndroidManifest.xml:42:13-37
+48            android:screenOrientation="sensor"
+48-->/WindowsUI/winlator/src/main/AndroidManifest.xml:43:13-47
+49            android:theme="@style/AppThemeDark" />
+49-->/WindowsUI/winlator/src/main/AndroidManifest.xml:41:13-48
+50
+51        <service
+51-->/WindowsUI/winlator/src/main/AndroidManifest.xml:45:9-50:44
+52            android:name="com.winlator.services.ForegroundService"
+52-->/WindowsUI/winlator/src/main/AndroidManifest.xml:46:13-67
+53            android:enabled="true"
+53-->/WindowsUI/winlator/src/main/AndroidManifest.xml:47:13-35
+54            android:exported="false"
+54-->/WindowsUI/winlator/src/main/AndroidManifest.xml:48:13-37
+55            android:foregroundServiceType="mediaPlayback"
+55-->/WindowsUI/winlator/src/main/AndroidManifest.xml:49:13-58
+56            android:stopWithTask="false" />
+56-->/WindowsUI/winlator/src/main/AndroidManifest.xml:50:13-41
+57
+58        <provider
+58-->/WindowsUI/winlator/src/main/AndroidManifest.xml:52:9-60:20
+59            android:name="com.winlator.AsuiFileProvider"
+59-->/WindowsUI/winlator/src/main/AndroidManifest.xml:53:13-57
+60            android:authorities="com.winlator.FileProvider"
+60-->/WindowsUI/winlator/src/main/AndroidManifest.xml:54:13-60
+61            android:exported="false"
+61-->/WindowsUI/winlator/src/main/AndroidManifest.xml:55:13-37
+62            android:grantUriPermissions="true" >
+62-->/WindowsUI/winlator/src/main/AndroidManifest.xml:56:13-47
+63            <meta-data
+63-->/WindowsUI/winlator/src/main/AndroidManifest.xml:57:13-59:53
+64                android:name="android.support.FILE_PROVIDER_PATHS"
+64-->/WindowsUI/winlator/src/main/AndroidManifest.xml:58:17-67
+65                android:resource="@xml/file_paths" />
+65-->/WindowsUI/winlator/src/main/AndroidManifest.xml:59:17-51
+66        </provider>
+67    </application>
+68
+69</manifest>
