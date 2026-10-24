@@ -278,7 +278,6 @@ public class XServerDisplayActivity extends AppCompatActivity implements Navigat
         setupUI();
 
         
-// BURAYI GÜNCELLE (Yaklaşık 215. satırlar)
 Executors.newSingleThreadExecutor().execute(() -> {
     try {
         if (!isGenerateWineprefix()) {
@@ -290,17 +289,27 @@ Executors.newSingleThreadExecutor().execute(() -> {
     } catch (Throwable t) {
         t.printStackTrace();
         
-        StringWriter sw = new StringWriter();
-        PrintWriter pw = new PrintWriter(sw);
+        // Hatanın tüm detayını (StackTrace) String'e çevir
+        java.io.StringWriter sw = new java.io.StringWriter();
+        java.io.PrintWriter pw = new java.io.PrintWriter(sw);
         t.printStackTrace(pw);
-        String stackTrace = sw.toString();
+        String fullError = sw.toString();
 
         runOnUiThread(() -> {
             preloaderDialog.closeOnUiThread();
-            // Hata mesajını ekranda göster
+            
+            // Ekranda kaydırılabilir bir hata penceresi oluştur
+            android.widget.TextView textView = new android.widget.TextView(XServerDisplayActivity.this);
+            textView.setText(fullError);
+            textView.setTextSize(10); // Okunması kolay olsun diye küçük font
+            textView.setPadding(20, 20, 20, 20);
+            
+            android.widget.ScrollView scrollView = new android.widget.ScrollView(XServerDisplayActivity.this);
+            scrollView.addView(textView);
+            
             new androidx.appcompat.app.AlertDialog.Builder(XServerDisplayActivity.this)
-                .setTitle("Motor Hatası")
-                .setMessage("Başlatılamadı: " + t.getMessage())
+                .setTitle("TAM HATA DETAYI")
+                .setView(scrollView) // Tüm logu buraya bas
                 .setPositiveButton("Tamam", null)
                 .show();
         });
