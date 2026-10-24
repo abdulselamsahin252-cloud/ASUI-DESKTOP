@@ -943,7 +943,12 @@ Executors.newSingleThreadExecutor().execute(() -> {
         File systemRegFile = new File(rootDir, RootFS.WINEPREFIX+"/system.reg");
 
         try {
-            JSONObject wincomponentsJSONObject = new JSONObject(FileUtils.readString(this, "wincomponents/wincomponents.json"));
+            // Güvenlik kontrolü: Dosya okunamazsa (null gelirse) çökmeyi engelle
+            String winCompJson = FileUtils.readString(this, "wincomponents/wincomponents.json");
+            if (winCompJson == null) {
+                return; // Dosya yoksa metodu burada bitir, çökme!
+            }
+            JSONObject wincomponentsJSONObject = new JSONObject(winCompJson);
             Iterator<String[]> oldWinComponentsIter = new KeyValueSet(container.getExtra("wincomponents", Container.FALLBACK_WINCOMPONENTS)).iterator();
             ArrayList<String> builtinDlls = new ArrayList<>();
 
