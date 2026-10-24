@@ -100,8 +100,9 @@ public static Intent createRunIntent(Context context, int containerId, String ex
             data.put("envVars", Container.DEFAULT_ENV_VARS);
             data.put("cpuList", Container.getFallbackCPUList());
             data.put("cpuListWoW64", Container.getFallbackCPUList());
-            data.put("graphicsDriver", GraphicsDrivers.getDefaultDriver(context));
-            data.put("dxwrapper", Container.DEFAULT_DXWRAPPER);
+
+            data.put("graphicsDriver", "turnip,virgl");
+            data.put("dxwrapper", "dxvk");
             data.put("dxwrapperConfig", "");
             data.put("graphicsDriverConfig", "");
             data.put("audioDriver", Container.DEFAULT_AUDIO_DRIVER);

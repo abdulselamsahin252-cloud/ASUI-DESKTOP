@@ -225,11 +225,17 @@ public class XServerDisplayActivity extends AppCompatActivity implements Navigat
                 Intent intent = getIntent();
                 if (intent.hasExtra("exec_path")) win32AppWorkarounds.applyStartupWorkarounds(FileUtils.getName(intent.getStringExtra("exec_path")));
             }
+       
+    // NULL KONTROLÜ
+    if (graphicsDriver == null || graphicsDriver.isEmpty()) graphicsDriver = "turnip,virgl";
+    if (graphicsDriverConfig == null) graphicsDriverConfig = "";
+    if (dxwrapper == null || dxwrapper.isEmpty()) dxwrapper = "dxvk";
+    if (dxwrapperConfig == null) dxwrapperConfig = "";
 
-            this.graphicsDriver = GraphicsDrivers.parseIdentifiers(graphicsDriver);
-            this.graphicsDriverConfig = GraphicsDrivers.parseConfigs(graphicsDriver, graphicsDriverConfig);
-            this.dxwrapper = DXWrappers.parseIdentifier(dxwrapper);
-            this.dxwrapperConfig = DXWrappers.parseConfigs(dxwrapper, dxwrapperConfig);
+    this.graphicsDriver = GraphicsDrivers.parseIdentifiers(graphicsDriver);
+    this.graphicsDriverConfig = GraphicsDrivers.parseConfigs(graphicsDriver, graphicsDriverConfig);
+    this.dxwrapper = DXWrappers.parseIdentifier(dxwrapper);
+    this.dxwrapperConfig = DXWrappers.parseConfigs(dxwrapper, dxwrapperConfig);
         }
 
         preloaderDialog.show(R.string.starting_up);
