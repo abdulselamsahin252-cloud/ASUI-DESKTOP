@@ -16,6 +16,8 @@ jobs:
         distribution: 'temurin'
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+    - name: Remove local aapt2 override for CI
+      run: sed -i '/android.aapt2FromMavenOverride/d' gradle.properties
     - name: Build with Gradle
       run: ./gradlew assembleDebug
     - name: Upload APK
