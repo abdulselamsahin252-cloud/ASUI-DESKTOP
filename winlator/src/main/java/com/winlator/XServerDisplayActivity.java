@@ -225,17 +225,19 @@ public class XServerDisplayActivity extends AppCompatActivity implements Navigat
                 Intent intent = getIntent();
                 if (intent.hasExtra("exec_path")) win32AppWorkarounds.applyStartupWorkarounds(FileUtils.getName(intent.getStringExtra("exec_path")));
             }
-       
-    // NULL KONTROLÜ
-    if (graphicsDriver == null || graphicsDriver.isEmpty()) graphicsDriver = "turnip,virgl";
-    if (graphicsDriverConfig == null) graphicsDriverConfig = "";
-    if (dxwrapper == null || dxwrapper.isEmpty()) dxwrapper = "dxvk";
-    if (dxwrapperConfig == null) dxwrapperConfig = "";
 
-    this.graphicsDriver = GraphicsDrivers.parseIdentifiers(graphicsDriver);
-    this.graphicsDriverConfig = GraphicsDrivers.parseConfigs(graphicsDriver, graphicsDriverConfig);
-    this.dxwrapper = DXWrappers.parseIdentifier(dxwrapper);
-    this.dxwrapperConfig = DXWrappers.parseConfigs(dxwrapper, dxwrapperConfig);
+    // --- KESİN NULL KONTROLÜ ---
+    String[] parsedGraphics = GraphicsDrivers.parseIdentifiers(graphicsDriver);
+    this.graphicsDriver = (parsedGraphics != null) ? parsedGraphics : new String[]{GraphicsDrivers.DEFAULT_VULKAN_DRIVER, GraphicsDrivers.DEFAULT_OPENGL_DRIVER};
+
+    KeyValueSet[] parsedGraphicsConfig = GraphicsDrivers.parseConfigs(graphicsDriver, graphicsDriverConfig);
+    this.graphicsDriverConfig = (parsedGraphicsConfig != null) ? parsedGraphicsConfig : new KeyValueSet[]{new KeyValueSet(), new KeyValueSet()};
+
+    String parsedDxWrapper = DXWrappers.parseIdentifier(dxwrapper);
+    this.dxwrapper = (parsedDxWrapper != null) ? parsedDxWrapper : DXWrappers.DXVK;
+
+    KeyValueSet[] parsedDxWrapperConfig = DXWrappers.parseConfigs(dxwrapper, dxwrapperConfig);
+    this.dxwrapperConfig = (parsedDxWrapperConfig != null) ? parsedDxWrapperConfig : new KeyValueSet[]{new KeyValueSet(), new KeyValueSet()};
         }
 
         preloaderDialog.show(R.string.starting_up);
